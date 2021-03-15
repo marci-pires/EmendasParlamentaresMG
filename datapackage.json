@@ -8,21 +8,21 @@
       "schema": {
         "fields": [
           {
-            "name": "responsavel_indicacao",
+            "name": "responsavel",
             "type": "string",
             "format": "default",
             "title": "Responsável pela Indicação",
             "description": "Deputado, comissão, bloco ou bancada responsável pela indicação no SIGCON"
           },
           {
-            "name": "cod_uo",
+            "name": "uo",
             "type": "integer",
             "format": "default",
             "title": "Unidade Organizacional",
             "description": "Código da UO do órgão"
           },
           {
-            "name": "sigla_orgao",
+            "name": "orgao",
             "type": "string",
             "format": "default",
             "title": "Sigla Órgão",
@@ -72,7 +72,7 @@
           },
           {
             "name": "cnpj",
-            "type": "integer",
+            "type": "string",
             "format": "default",
             "title": "CNPJ",
             "description": "CNPJ do beneficiário\n"
@@ -155,7 +155,7 @@
             "description": "Valor informado pelo responsável pela indicação"
           },
           {
-            "name": "atualizado_em",
+            "name": "atualizado em",
             "type": "string",
             "format": "default",
             "description": "última atualização dos dados",
