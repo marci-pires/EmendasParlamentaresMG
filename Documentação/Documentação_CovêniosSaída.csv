@@ -1,22 +1,22 @@
-﻿Nome do Relatório;Nome da coluna;Título;Descrição;Tipo de dados;Formato dos dados
-valores_indicados_emendas_impos;responsavel;Responsável pela emenda;pode ser deputado etc;;
-valores_indicados_emendas_impos;uo;Unidade Organizacional;;;
-valores_indicados_emendas_impos;orgao;Órgão;;;
-valores_indicados_emendas_impos;n_sigcon;Número de Referência SIGCON;;;
-valores_indicados_emendas_impos;tipo_indicacao;Tipo de Indicação;;;
-valores_indicados_emendas_impos;ano_inciso;Ano do Inciso;;;
-valores_indicados_emendas_impos;impositividade;Impositividade;;;
-valores_indicados_emendas_impos;municipio;Município;;;
-valores_indicados_emendas_impos;razao_social;Razão Social;Razão social do beneficiário;;
-valores_indicados_emendas_impos;cnpj;CNPJ;CNPJ do beneficiário;;
-valores_indicados_emendas_impos;codesc;Código Escola;Código das escolas  institutos e centros educacionais;;
-valores_indicados_emendas_impos;acao;Ação;Ação da LOA 2020;;
-valores_indicados_emendas_impos;grupo_despesa;Grupo de Despesa;Grupo de despesa LOA 2020;;
-valores_indicados_emendas_impos;genero;Gênero;Gênero da despesa;;
-valores_indicados_emendas_impos;categoria;Categoria;;;
-valores_indicados_emendas_impos;especificacao;Especificação;;;
-valores_indicados_emendas_impos;descricao;Descrição;;;
-valores_indicados_emendas_impos;tipo_aplicacao;Tipo de Aplicação;;;
-valores_indicados_emendas_impos;vl_indicado;Valor Indicado;;;
-valores_indicados_emendas_impos;data_indicacao_sigcon;Data da Indicação no SIGCON;;;
-valores_indicados_emendas_impos;vl_informado;Valor Informado;;;
+﻿Nome do Relatório,Nome da coluna,Título,Descrição,Tipo de dados,Formato dos dados
+valores_indicados_emendas_impos,responsavel,Responsável pela emenda,pode ser deputado etc,,
+valores_indicados_emendas_impos,uo,Unidade Organizacional,,,
+valores_indicados_emendas_impos,orgao,Órgão,,,
+valores_indicados_emendas_impos,n_sigcon,Número de Referência SIGCON,,,
+valores_indicados_emendas_impos,tipo_indicacao,Tipo de Indicação,,,
+valores_indicados_emendas_impos,ano_inciso,Ano do Inciso,,,
+valores_indicados_emendas_impos,impositividade,Impositividade,,,
+valores_indicados_emendas_impos,municipio,Município,,,
+valores_indicados_emendas_impos,razao_social,Razão Social,Razão social do beneficiário,,
+valores_indicados_emendas_impos,cnpj,CNPJ,CNPJ do beneficiário,,
+valores_indicados_emendas_impos,codesc,Código Escola,Código das escolas  institutos e centros educacionais,,
+valores_indicados_emendas_impos,acao,Ação,Ação da LOA 2020,,
+valores_indicados_emendas_impos,grupo_despesa,Grupo de Despesa,Grupo de despesa LOA 2020,,
+valores_indicados_emendas_impos,genero,Gênero,Gênero da despesa,,
+valores_indicados_emendas_impos,categoria,Categoria,,,
+valores_indicados_emendas_impos,especificacao,Especificação,,,
+valores_indicados_emendas_impos,descricao,Descrição,,,
+valores_indicados_emendas_impos,tipo_aplicacao,Tipo de Aplicação,,,
+valores_indicados_emendas_impos,vl_indicado,Valor Indicado,,,
+valores_indicados_emendas_impos,data_indicacao_sigcon,Data da Indicação no SIGCON,,,
+valores_indicados_emendas_impos,vl_informado,Valor Informado,,,
