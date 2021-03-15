@@ -1,22 +1,22 @@
-﻿Nome do Relatório,Nome da coluna,Título,Descrição,Tipo de dados,Formato dos dados
-valores_indicados_emendas_impos,responsavel,Responsável pela emenda,pode ser deputado etc,,
-valores_indicados_emendas_impos,uo,Unidade Organizacional,,,
-valores_indicados_emendas_impos,orgao,Órgão,,,
-valores_indicados_emendas_impos,n_sigcon,Número de Referência SIGCON,,,
-valores_indicados_emendas_impos,tipo_indicacao,Tipo de Indicação,,,
-valores_indicados_emendas_impos,ano_inciso,Ano do Inciso,,,
-valores_indicados_emendas_impos,impositividade,Impositividade,,,
-valores_indicados_emendas_impos,municipio,Município,,,
-valores_indicados_emendas_impos,razao_social,Razão Social,Razão social do beneficiário,,
-valores_indicados_emendas_impos,cnpj,CNPJ,CNPJ do beneficiário,,
-valores_indicados_emendas_impos,codesc,Código Escola,Código das escolas  institutos e centros educacionais,,
-valores_indicados_emendas_impos,acao,Ação,Ação da LOA 2020,,
-valores_indicados_emendas_impos,grupo_despesa,Grupo de Despesa,Grupo de despesa LOA 2020,,
-valores_indicados_emendas_impos,genero,Gênero,Gênero da despesa,,
-valores_indicados_emendas_impos,categoria,Categoria,,,
-valores_indicados_emendas_impos,especificacao,Especificação,,,
-valores_indicados_emendas_impos,descricao,Descrição,,,
-valores_indicados_emendas_impos,tipo_aplicacao,Tipo de Aplicação,,,
-valores_indicados_emendas_impos,vl_indicado,Valor Indicado,,,
-valores_indicados_emendas_impos,data_indicacao_sigcon,Data da Indicação no SIGCON,,,
-valores_indicados_emendas_impos,vl_informado,Valor Informado,,,
+﻿Nome do Relatório;Nome da coluna;Título;Descrição;Tipo de dados;Formato dos dados
+valores_indicados_emendas_impos;responsavel;Responsável pela emenda;pode ser deputado etc;string;
+valores_indicados_emendas_impos;uo;Unidade Organizacional;Código da UO do órgão;integer;
+valores_indicados_emendas_impos;orgao;Órgão;Sigla do órgão do estado de Minas Gerais;string;
+valores_indicados_emendas_impos;n_sigcon;Número de Referência SIGCON;Número de referência no sistema SIGCON;integer;
+valores_indicados_emendas_impos;tipo_indicacao;Tipo de Indicação;O tipo de indicação se refere ao tipo de instrumento a ser firmado/realizado entre as partes;string;
+valores_indicados_emendas_impos;ano_inciso;Ano do Inciso;Ano LOA de referência;integer;
+valores_indicados_emendas_impos;impositividade;Impositividade;Se trata de uma emenda de execução impositiva (ou seja; obrigatória no ano de exercício);boolean
+valores_indicados_emendas_impos;municipio;Município;Município em que o beneficiário está localizado;string;
+valores_indicados_emendas_impos;razao_social;Razão Social;Razão social do beneficiário;string;
+valores_indicados_emendas_impos;cnpj;CNPJ;CNPJ do beneficiário;integer;
+valores_indicados_emendas_impos;codesc;Código Escola;Código das escolas  institutos e centros educacionais;integer;
+valores_indicados_emendas_impos;acao;Ação;Ação da LOA 2020;integer;
+valores_indicados_emendas_impos;grupo_despesa;Grupo de Despesa;Grupo de despesa LOA 2020;string;
+valores_indicados_emendas_impos;genero;Gênero;Gênero do atendimento;string;
+valores_indicados_emendas_impos;categoria;Categoria;Categoria do atendimento;string;
+valores_indicados_emendas_impos;especificacao;Especificação;Especificação do atendimento;string;
+valores_indicados_emendas_impos;descricao;Descrição;Descrição do atendimento;string;
+valores_indicados_emendas_impos;tipo_aplicacao;Tipo de Aplicação;Tipo de aplicação da emenda para outros tipos de instrumento diferentes de convênios e parcerias MROSC;string;
+valores_indicados_emendas_impos;vl_indicado;Valor Indicado;Valor total indicado pelo parlamentar;float;
+valores_indicados_emendas_impos;data_indicacao_sigcon;Data da Indicação no SIGCON;Data da realização da indicação no SIGCON;;
+valores_indicados_emendas_impos;vl_informado;Valor Informado;Valor informado pelo parlamentar ?;float;

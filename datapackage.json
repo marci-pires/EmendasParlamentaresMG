@@ -1,0 +1,181 @@
+{
+  "profile": "data-package",
+  "resources": [
+    {
+      "name": "VALORES_INDICADOS_EMENDAS_IMP_2020",
+      "path": "valores_indicados_emendas_impositivas_20.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "responsavel_indicacao",
+            "type": "string",
+            "format": "default",
+            "title": "Responsável pela Indicação",
+            "description": "Deputado, comissão, bloco ou bancada responsável pela indicação no SIGCON"
+          },
+          {
+            "name": "cod_uo",
+            "type": "integer",
+            "format": "default",
+            "title": "Unidade Organizacional",
+            "description": "Código da UO do órgão"
+          },
+          {
+            "name": "sigla_orgao",
+            "type": "string",
+            "format": "default",
+            "title": "Sigla Órgão",
+            "description": "Sigla do órgão do estado de Minas Gerais\n"
+          },
+          {
+            "name": "n_sigcon",
+            "type": "integer",
+            "format": "default",
+            "title": "Número de Referência SIGCON",
+            "description": "Número de referência no sistema SIGCON"
+          },
+          {
+            "name": "tipo_indicacao",
+            "type": "string",
+            "format": "default",
+            "title": "Tipo de Indicação",
+            "description": "O tipo de indicação se refere ao tipo de instrumento a ser firmado/realizado entre as partes\n"
+          },
+          {
+            "name": "ano_inciso",
+            "type": "integer",
+            "format": "default",
+            "title": "Ano do Inciso",
+            "description": "Ano do exercício financeiro da indicação realizada - 2020\n"
+          },
+          {
+            "name": "impositividade",
+            "type": "string",
+            "format": "default",
+            "title": "Impositividade da indicação",
+            "description": "Se trata de uma emenda de execução impositiva (ou seja de execução obrigatória no ano de exercíco)\n"
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "format": "default",
+            "title": "Município",
+            "description": "Município em que o beneficiário está localizado\n"
+          },
+          {
+            "name": "razao_social",
+            "type": "string",
+            "format": "default",
+            "title": "Razão social",
+            "description": "Razão social do beneficiário\n"
+          },
+          {
+            "name": "cnpj",
+            "type": "integer",
+            "format": "default",
+            "title": "CNPJ",
+            "description": "CNPJ do beneficiário\n"
+          },
+          {
+            "name": "codesc",
+            "type": "integer",
+            "format": "default",
+            "title": "Código Escola",
+            "description": "Código das escolas  institutos e centros educacionais\n"
+          },
+          {
+            "name": "acao",
+            "type": "integer",
+            "format": "default",
+            "title": "Ação",
+            "description": "Ação da LOA 2020\n"
+          },
+          {
+            "name": "grupo_despesa",
+            "type": "string",
+            "format": "default",
+            "description": "Grupo de despesa LOA 2020\n",
+            "title": "Grupo de despesa"
+          },
+          {
+            "name": "genero",
+            "type": "string",
+            "format": "default",
+            "title": "Gênero do Tipo de Atendimento",
+            "description": "Gênero do Tipo de Atendimento"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "format": "default",
+            "title": "Categoria do Tipo de Atendimento",
+            "description": "Categoria do Tipo de Atendimento"
+          },
+          {
+            "name": "especificacao",
+            "type": "string",
+            "format": "default",
+            "title": "Especificação do Tipo de Atendimento",
+            "description": "Especificação do Tipo de Atendimento"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "format": "default",
+            "description": "Descrição do Atendimento",
+            "title": "Descrição do Atendimento"
+          },
+          {
+            "name": "tipo_aplicacao",
+            "type": "string",
+            "format": "default",
+            "title": "Tipo de Aplicação",
+            "description": "Tipo de aplicação da emenda para outros tipos de instrumento diferentes de convênios e parcerias MROSC"
+          },
+          {
+            "name": "vl_indicado",
+            "type": "integer",
+            "format": "default",
+            "title": "Valor Indicado",
+            "description": "Valor total indicado pelo parlamentar\npara aquele beneficiário naquele número de referência do SIGCON"
+          },
+          {
+            "name": "data_indicacao_sigcon",
+            "type": "string",
+            "format": "default",
+            "title": "Data da Indicação no SIGCON",
+            "description": "Data da realização da indicação no SIGCON"
+          },
+          {
+            "name": "vl_informado",
+            "type": "integer",
+            "format": "default",
+            "title": "Valor Informado",
+            "description": "Valor informado pelo responsável pela indicação"
+          },
+          {
+            "name": "atualizado_em",
+            "type": "string",
+            "format": "default",
+            "description": "última atualização dos dados",
+            "title": "Atualizado em"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "emendas parlamentares",
+    "emendas impositivas"
+  ],
+  "name": "VALORES_INDICADOS_EMENDAS_IMP_2020",
+  "description": "Dados com as indicações impositivas realizadas em 2020 - até a coluna U",
+  "title": "Valores indicados emendas impositivas 2020",
+  "contributors": [
+    {
+      "title": "Marcela Pires",
+      "role": "author"
+    }
+  ]
+}
