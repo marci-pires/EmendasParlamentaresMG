@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "VALORES_INDICADOS_EMENDAS_IMP_2020",
-      "path": "valores_indicados_emendas_impositivas_20.csv",
+      "path": "ATÉ U_valores_indicados_emendas_impositivas_20",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
