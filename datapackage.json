@@ -2,8 +2,8 @@
   "profile": "data-package",
   "resources": [
     {
-      "name": "VALORES_INDICADOS_EMENDAS_IMP_2020",
-      "path": "ATÉ U_valores_indicados_emendas_impositivas_20",
+      "name": "valoresindicadosemendasimp2020",
+      "path": "ATÉ U_valores_indicados_emendas_impositivas_20.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -169,7 +169,7 @@
     "emendas parlamentares",
     "emendas impositivas"
   ],
-  "name": "VALORES_INDICADOS_EMENDAS_IMP_2020",
+  "name": "valoresindicadosemendasimp2020",
   "description": "Dados com as indicações impositivas realizadas em 2020 - até a coluna U",
   "title": "Valores indicados emendas impositivas 2020",
   "contributors": [
