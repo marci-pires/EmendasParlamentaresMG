@@ -5,6 +5,9 @@
       "name": "valoresindicadosemendasimp2020",
       "path": "ATÉ U_valores_indicados_emendas_impositivas_20.csv",
       "profile": "tabular-data-resource",
+	  "format": "csv",
+	  "mediatype": "text/csv",
+		"encoding": "utf-8",
       "schema": {
         "fields": [
           {
@@ -139,8 +142,8 @@
             "format": "default",
             "title": "Valor Indicado",
             "description": "Valor total indicado pelo parlamentar\npara aquele beneficiário naquele número de referência do SIGCON"
-            groupChar: ".",
-            decimalChar: ","
+            "groupChar": ".",
+            "decimalChar": ","
           },
           {
             "name": "data_indicacao_sigcon",
@@ -155,8 +158,8 @@
             "format": "default",
             "title": "Valor Informado",
             "description": "Valor informado pelo responsável pela indicação"
-            groupChar: ".",
-            decimalChar: ","
+            "groupChar": ".",
+            "decimalChar": ","
           },
           {
             "name": "atualizado em",
