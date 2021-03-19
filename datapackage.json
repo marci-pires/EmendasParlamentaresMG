@@ -138,12 +138,12 @@
           },
           {
             "name": "vl_indicado",
-            "type": "integer",
+            "type": "number",
             "format": "default",
             "title": "Valor Indicado",
-            "description": "Valor total indicado pelo parlamentar\npara aquele beneficiário naquele número de referência do SIGCON"
+            "description": "Valor total indicado pelo parlamentar\npara aquele beneficiário naquele número de referência do SIGCON",
             "groupChar": ".",
-            "decimalChar": ","
+		"decimalChar":","
           },
           {
             "name": "data_indicacao_sigcon",
@@ -154,11 +154,11 @@
           },
           {
             "name": "vl_informado",
-            "type": "integer",
+            "type": "number",
             "format": "default",
             "title": "Valor Informado",
-            "description": "Valor informado pelo responsável pela indicação"
-            "groupChar": ".",
+            "description": "Valor informado pelo responsável pela indicação",
+		"groupChar": ".",
             "decimalChar": ","
           },
           {
