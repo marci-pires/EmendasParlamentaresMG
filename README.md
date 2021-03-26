@@ -1,4 +1,5 @@
-# Repositório de Dados Abertos - SEGOV-MG
-Repositório de dados governamentais que pertencem à Secretaria de Estado de Governo de Minas Gerais
+# Repositório de Dados Abertos - EMENDAS PARLAMENTARES
 
-1.0 - trabalharemos os dados de CONVÊNIOS DE SAÍDA sob responsabilidade da Superintendência Central de Convênios e Parcerias (SCCP)
+Repositório de dados governamentais extraídos dos relatórios disponibilizados no portal SIGCON-SAÍDA (sigconsaida.mg.gov.br) 
+
+1.0 - dados de emenda parlamentar 2020
