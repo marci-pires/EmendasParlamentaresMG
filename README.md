@@ -5,7 +5,7 @@ Repositório de dados governamentais extraídos dos relatórios disponibilizados
 
 ## Informações e Definições Gerais para o Repósitório de Dados sobre Emendas Parlamentares MG
 
-### De acordo com a Resolução Segov nº 001/2021 temos que
+### De acordo com a [Resolução Segov nº 001/2021](http://www.sigconsaida.mg.gov.br/wp-content/uploads/arquivos/resolucoes/resolucao_segov_001_01_02_2021_SEI.pdf) temos que
 
 | Tópico | Descrição |
 | ---- | ---- |
