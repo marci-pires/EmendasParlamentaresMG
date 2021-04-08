@@ -1,12 +1,11 @@
 # Repositório de Dados Abertos - EMENDAS PARLAMENTARES
+***Versão 1.0 - Abril 2021***
 
 Repositório de dados governamentais extraídos dos relatórios disponibilizados no portal SIGCON-SAÍDA (sigconsaida.mg.gov.br) 
 
-# Informações e Definições Gerais para o Repósitório de Dados sobre Emendas Parlamentares MG
+## Informações e Definições Gerais para o Repósitório de Dados sobre Emendas Parlamentares MG
 
-***Versão 1.0 - Abril 2021***
-
-## De acordo com a Resolução Segov nº 001/2021 temos que
+### De acordo com a Resolução Segov nº 001/2021 temos que
 
 | Tópico | Descrição |
 | ---- | ---- |
