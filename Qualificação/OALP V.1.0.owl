@@ -1,0 +1,756 @@
+@prefix : <http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/user/ontologies/2021/5/oapl> .
+
+<http://www.semanticweb.org/user/ontologies/2021/5/oapl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#blocoECompostoPor
+:blocoECompostoPor rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Bloco ;
+                   rdfs:range :Parlamentar .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#blocoTem
+:blocoTem rdf:type owl:ObjectProperty ;
+          rdfs:domain :Bloco ;
+          rdfs:range :Parlamentar .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#compostoDe
+:compostoDe rdf:type owl:ObjectProperty ;
+            rdfs:domain :InstrumentoJuridico ;
+            rdfs:range <http://webprotege.stanford.edu/OrgaoEstadualEEntidadeParceira> ,
+                       :Convenente ,
+                       :DotacaoOrcamentaria ,
+                       :Emenda ,
+                       :Municipio ,
+                       :TipoAplicacao ,
+                       :TipoAtendimento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#eComposto
+:eComposto rdf:type owl:ObjectProperty ;
+           rdfs:domain :Bloco .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#fazIndicacao
+:fazIndicacao rdf:type owl:ObjectProperty ;
+              rdfs:domain :ResponsavelPelaIndicacao ;
+              rdfs:range :Indicacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#indicacaoRealizadaPara
+:indicacaoRealizadaPara rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Indicacao ;
+                        rdfs:range :Convenente ,
+                                   :Municipio .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#municipioPossui
+:municipioPossui rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Municipio ;
+                 rdfs:range :Convenente .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#status
+:status rdf:type owl:ObjectProperty ;
+        rdfs:domain :InstrumentoJuridico ;
+        rdfs:range :StatusIndicacaoInstrumento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temAcao
+:temAcao rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :temDotacao ;
+         rdfs:range :Acao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temAutor
+:temAutor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Emenda ;
+          rdfs:range :Bloco .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temCategoria
+:temCategoria rdf:type owl:ObjectProperty ;
+              rdfs:domain :GeneroTipoAtendimento ;
+              rdfs:range :Categoria .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temClassificacaoResponsavel
+:temClassificacaoResponsavel rdf:type owl:ObjectProperty ;
+                             rdfs:range :Bloco .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temConcedente
+:temConcedente rdf:type owl:ObjectProperty ;
+               rdfs:domain :InstrumentoJuridico ;
+               rdfs:range <http://webprotege.stanford.edu/OrgaoEstadualEEntidadeParceira> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temConvenente
+:temConvenente rdf:type owl:ObjectProperty ;
+               rdfs:domain :InstrumentoJuridico ;
+               rdfs:range :Convenente .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temDotacao
+:temDotacao rdf:type owl:ObjectProperty ;
+            rdfs:domain :Emenda ;
+            rdfs:range :DotacaoOrcamentaria .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temEmenda
+:temEmenda rdf:type owl:ObjectProperty ;
+           rdfs:domain :Indicacao ;
+           rdfs:range :Emenda .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temEspecificacao
+:temEspecificacao rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Categoria ;
+                  rdfs:range :Especificacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temGenero
+:temGenero rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :TipoAtendimento ;
+           rdfs:range :GeneroTipoAtendimento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temGrupoDespesa
+:temGrupoDespesa rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :temDotacao ;
+                 rdfs:range :GrupoDespesa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temInciso
+:temInciso rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Emenda ;
+           rdfs:range :Inciso .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temIndicacao
+:temIndicacao rdf:type owl:ObjectProperty ;
+              rdfs:domain :Inciso ;
+              rdfs:range :Indicacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temIndicadorDeImpositividade
+:temIndicadorDeImpositividade rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Indicacao ;
+                              rdfs:range :IndicadorDeImpositividade .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temInstrumento
+:temInstrumento rdf:type owl:ObjectProperty ;
+                rdfs:range :InstrumentoJuridico .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temLider
+:temLider rdf:type owl:ObjectProperty ;
+          rdfs:domain :Bloco .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temModalidadeDeTransferencia
+:temModalidadeDeTransferencia rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Indicacao ;
+                              rdfs:range :TransferenciaEspecial ,
+                                         :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temPartidoPolitico
+:temPartidoPolitico rdf:type owl:ObjectProperty ;
+                    rdfs:range <http://webprotege.stanford.edu/PartidoPolitico> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temTipoAplicacao
+:temTipoAplicacao rdf:type owl:ObjectProperty ;
+                  rdfs:domain :InstrumentoJuridico ;
+                  rdfs:range :TipoAplicacao ;
+                  rdfs:comment "ou tem tipo de aplicação ou tem tipo de atendimento"@pt .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temTipoAtendimento
+:temTipoAtendimento rdf:type owl:ObjectProperty ;
+                    rdfs:domain :InstrumentoJuridico ;
+                    rdfs:range :TipoAtendimento ;
+                    rdfs:comment "ou tem tipo de aplicação ou tem tipo de atendimento"@pt .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temTipoIndicacao
+:temTipoIndicacao rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Indicacao ;
+                  rdfs:range :TransferenciaEspecial ,
+                             :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#temUO
+:temUO rdf:type owl:ObjectProperty ;
+       rdfs:domain :InstrumentoJuridico ;
+       rdfs:range :UnidadeOrcamentaria ;
+       rdfs:comment "tem Unidade Orçamentária" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#CNPJ
+:CNPJ rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Convenente ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ano
+:ano rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdfs:domain :Emenda ,
+                 :Inciso ;
+     rdfs:range xsd:string ;
+     rdfs:comment "emenda, inciso e indicação tem ano que deve ser o mesmo"@pt .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#codEscola
+:codEscola rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Convenente ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#dataHorarioIndicacao
+:dataHorarioIndicacao rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Indicacao ;
+                      rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#descricao
+:descricao rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#indicadorImpositividade
+:indicadorImpositividade rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#matricula
+:matricula rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Acao ,
+                  :Convenente ,
+                  :GrupoDespesa ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#nomeEscola
+:nomeEscola rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Convenente ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Emenda ,
+                    :Inciso ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#numeroInciso
+:numeroInciso rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Inciso ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#numeroPrioridade
+:numeroPrioridade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#siglaPartido
+:siglaPartido rdf:type owl:DatatypeProperty ;
+              rdfs:domain <http://webprotege.stanford.edu/PartidoPolitico> ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#siglaUO
+:siglaUO rdf:type owl:DatatypeProperty ;
+         rdfs:domain :UnidadeOrcamentaria ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#tipoInciso
+:tipoInciso rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Inciso ;
+            rdfs:range xsd:string ;
+            rdfs:comment "tem três tipos: S, R ou P"@pt .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#tipoInstrumento
+:tipoInstrumento rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :InstrumentoJuridico ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#valorIndicado
+:valorIndicado rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Indicacao ;
+               rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/ExecucaoDeEmenda
+<http://webprotege.stanford.edu/ExecucaoDeEmenda> rdf:type owl:Class ;
+                                                  rdfs:comment "Transferencia especial não é um tipo de instrumento juridico - não formaliza" .
+
+
+###  http://webprotege.stanford.edu/OrgaoEstadualEEntidadeParceira
+<http://webprotege.stanford.edu/OrgaoEstadualEEntidadeParceira> rdf:type owl:Class ;
+                                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :temUO ;
+                                                                                  owl:someValuesFrom :UnidadeOrcamentaria
+                                                                                ] ;
+                                                                rdfs:comment "órgãos estaduais ou entidades parceiras"^^xsd:string ;
+                                                                rdfs:label "OEEP"@pt-br .
+
+
+###  http://webprotege.stanford.edu/PartidoPolitico
+<http://webprotege.stanford.edu/PartidoPolitico> rdf:type owl:Class ;
+                                                 rdfs:label "Partido"@pt-br .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Acao
+:Acao rdf:type owl:Class ;
+      rdfs:subClassOf :DotacaoOrcamentaria ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :ano ;
+                        owl:someValuesFrom xsd:string
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :numero ;
+                        owl:someValuesFrom xsd:string
+                      ] ;
+      owl:disjointWith :GrupoDespesa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#AplicacaoDiretaDoacaoBens
+:AplicacaoDiretaDoacaoBens rdf:type owl:Class ;
+                           rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                           :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Aprovado
+:Aprovado rdf:type owl:Class ;
+          rdfs:subClassOf :StatusIndicacaoInstrumento ;
+          owl:disjointWith :EnviadoSecretariaEstadoEducacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#AquisicaoDeBem
+:AquisicaoDeBem rdf:type owl:Class ;
+                rdfs:subClassOf :GeneroTipoAtendimento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Bloco
+:Bloco rdf:type owl:Class ;
+       rdfs:subClassOf :GrupoDePessoa ,
+                       :ResponsavelPelaIndicacao ;
+       rdfs:comment "um bloco pode ter vários parlamentares" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Categoria
+:Categoria rdf:type owl:Class ;
+           rdfs:subClassOf :GeneroTipoAtendimento ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :temEspecificacao ;
+                             owl:someValuesFrom :Especificacao
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :descricao ;
+                             owl:someValuesFrom xsd:string
+                           ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#CelebracaoConvenio
+:CelebracaoConvenio rdf:type owl:Class ;
+                    rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                    :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ClassificacaoResponsavel
+:ClassificacaoResponsavel rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ConsorcioPublico
+:ConsorcioPublico rdf:type owl:Class ;
+                  rdfs:subClassOf :Convenente .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ConsorcioPublicoDeDireitoPrivado
+:ConsorcioPublicoDeDireitoPrivado rdf:type owl:Class ;
+                                  rdfs:subClassOf :ConsorcioPublico ;
+                                  owl:disjointWith :ConsorcioPublicoDeDireitoPublico .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ConsorcioPublicoDeDireitoPublico
+:ConsorcioPublicoDeDireitoPublico rdf:type owl:Class ;
+                                  rdfs:subClassOf :ConsorcioPublico .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Convenente
+:Convenente rdf:type owl:Class ;
+            rdfs:comment "Melhoria a ser implementada: existe uma diferença entre beneficiario e convenente a depender do tipo de instrumento a ser celebrado" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#DespesaCorrente
+:DespesaCorrente rdf:type owl:Class ;
+                 rdfs:subClassOf :GrupoDespesa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#DotacaoOrcamentaria
+:DotacaoOrcamentaria rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :temAcao ;
+                                       owl:someValuesFrom :Acao
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :temGrupoDespesa ;
+                                       owl:someValuesFrom :GrupoDespesa
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :temUO ;
+                                       owl:someValuesFrom :UnidadeOrcamentaria
+                                     ] ;
+                     rdfs:comment "Dotação Orçamentária" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Emenda
+:Emenda rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :temDotacao ;
+                          owl:someValuesFrom :DotacaoOrcamentaria
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :numero ;
+                          owl:someValuesFrom xsd:string
+                        ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#EnviadoSecretariaEstadoEducacao
+:EnviadoSecretariaEstadoEducacao rdf:type owl:Class ;
+                                 rdfs:subClassOf :StatusIndicacaoInstrumento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Especificacao
+:Especificacao rdf:type owl:Class ;
+               rdfs:subClassOf :Categoria ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :descricao ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ExecucaoDireta
+:ExecucaoDireta rdf:type owl:Class ;
+                rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ExecucaoDiretaCaixaEscolar
+:ExecucaoDiretaCaixaEscolar rdf:type owl:Class ;
+                            rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                            :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#FundoMunicipalDeSaude
+:FundoMunicipalDeSaude rdf:type owl:Class ;
+                       rdfs:subClassOf :Convenente .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#GeneroTipoAtendimento
+:GeneroTipoAtendimento rdf:type owl:Class ;
+                       rdfs:subClassOf :TipoAtendimento ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :temCategoria ;
+                                         owl:someValuesFrom :Categoria
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :descricao ;
+                                         owl:someValuesFrom xsd:string
+                                       ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#GrupoDePessoa
+:GrupoDePessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#GrupoDespesa
+:GrupoDespesa rdf:type owl:Class ;
+              rdfs:subClassOf :DotacaoOrcamentaria .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Inciso
+:Inciso rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :ano ;
+                          owl:someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :tipoInciso ;
+                          owl:someValuesFrom xsd:string
+                        ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Indicacao
+:Indicacao rdf:type owl:Class ;
+           rdfs:comment """Ela pode ser de duas formas (MODALIDADE DE TRANSFERENCIA): finalidade definida e sem finalidade definida
+transferencia especial - não definida
+transferencia com finalidade definida (todas as outras)""" ,
+                        "a finalidade é definida no sistema SIGCON SAIDA" ,
+                        "indicação do inciso para uma modalidade de transferencia" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#IndicadorDeImpositividade
+:IndicadorDeImpositividade rdf:type owl:Class ;
+                           rdfs:comment "vem do inciso e é herdada pela indicação" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#InstrumentoJuridico
+:InstrumentoJuridico rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Investimento
+:Investimento rdf:type owl:Class ;
+              rdfs:subClassOf :GrupoDespesa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Municipio
+:Municipio rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Nao
+:Nao rdf:type owl:Class ;
+     rdfs:subClassOf :IndicadorDeImpositividade .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#OrganizacaoDaSociedadeCivil
+:OrganizacaoDaSociedadeCivil rdf:type owl:Class ;
+                             rdfs:subClassOf :Convenente .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#OrgaoOuEntidadePublica
+:OrgaoOuEntidadePublica rdf:type owl:Class ;
+                        rdfs:subClassOf :Convenente ;
+                        rdfs:comment """Fundação muncipal de direito público, a UFMG pode ser um exemplo - entidades publicas de outras esferas - federal ou municipal; ou outros estados da federação
+
+Não faz sentido celebrar um instrumento jurídico com uma entidade da mesma esfera, já que tem um custo operacional muito grande""" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#OrigemDoSistemaDeInfomacaoSISOR
+:OrigemDoSistemaDeInfomacaoSISOR rdf:type owl:Class ;
+                                 rdfs:subClassOf :Inciso ;
+                                 rdfs:comment "inciso S" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#OutrosInstrumentos
+:OutrosInstrumentos rdf:type owl:Class ;
+                    rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                    :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Parlamentar
+:Parlamentar rdf:type owl:Class ;
+             rdfs:subClassOf :Pessoa ,
+                             :ResponsavelPelaIndicacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#PoderExecutivoMunicipal
+:PoderExecutivoMunicipal rdf:type owl:Class ;
+                         rdfs:subClassOf :Convenente ;
+                         rdfs:comment "Prefeitura do municipio" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ReformaOuObra
+:ReformaOuObra rdf:type owl:Class ;
+               rdfs:subClassOf :GeneroTipoAtendimento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Remanejamento
+:Remanejamento rdf:type owl:Class ;
+               rdfs:subClassOf :Inciso ;
+               rdfs:comment "inciso R" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Resolucao
+:Resolucao rdf:type owl:Class ;
+           rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                           :TransferenciaFinalidadeDefinida .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#ResponsavelPelaIndicacao
+:ResponsavelPelaIndicacao rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#SaldoImpositivo
+:SaldoImpositivo rdf:type owl:Class ;
+                 rdfs:subClassOf :TipoAplicacao ;
+                 owl:disjointWith :SaldoIndicacaoImpositivaPossibilidadeCancelamento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#SaldoIndicacaoImpositivaPossibilidadeCancelamento
+:SaldoIndicacaoImpositivaPossibilidadeCancelamento rdf:type owl:Class ;
+                                                   rdfs:subClassOf :TipoAplicacao .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#SaneamentoERemanejamentoConstitucional
+:SaneamentoERemanejamentoConstitucional rdf:type owl:Class ;
+                                        rdfs:subClassOf :Inciso ;
+                                        rdfs:comment "inciso P" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Servico
+:Servico rdf:type owl:Class ;
+         rdfs:subClassOf :GeneroTipoAtendimento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Sim
+:Sim rdf:type owl:Class ;
+     rdfs:subClassOf :IndicadorDeImpositividade .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#StatusIndicacaoInstrumento
+:StatusIndicacaoInstrumento rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#TipoAplicacao
+:TipoAplicacao rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :descricao ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#TipoAtendimento
+:TipoAtendimento rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :temGenero ;
+                                   owl:someValuesFrom :GeneroTipoAtendimento
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :descricao ;
+                                   owl:someValuesFrom xsd:string
+                                 ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#TransferenciaEspecial
+:TransferenciaEspecial rdf:type owl:Class ;
+                       rdfs:subClassOf <http://webprotege.stanford.edu/ExecucaoDeEmenda> ,
+                                       :Indicacao ;
+                       rdfs:comment """Art. 160-A - A transferência a municípios de recursos estaduais decorrentes de programações incluídas na Lei Orçamentária Anual por emendas individuais, de blocos e de bancadas nos termos do § 6º do art. 160 poderá ser feita por meio de uma das seguintes modalidades:
+
+I - transferência especial;
+
+II - transferência com finalidade definida.
+https://www.almg.gov.br/consulte/legislacao/completa/completa-nova-min.html?tipo=CON&num=1989&comp=&ano=1989&texto=consolidado#texto""" ,
+                                    "de finalidade não definida" ,
+                                    "http://www.sigconsaida.mg.gov.br/wp-content/uploads/arquivos/resolucoes/resolucao_segov_001_2021_atualizada_resolucao_segov_008_2021.pdf" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#TransferenciaFinalidadeDefinida
+:TransferenciaFinalidadeDefinida rdf:type owl:Class ;
+                                 rdfs:subClassOf :Indicacao ;
+                                 rdfs:comment """Art. 160-A - A transferência a municípios de recursos estaduais decorrentes de programações incluídas na Lei Orçamentária Anual por emendas individuais, de blocos e de bancadas nos termos do § 6º do art. 160 poderá ser feita por meio de uma das seguintes modalidades:
+
+I - transferência especial;
+
+II - transferência com finalidade definida.
+https://www.almg.gov.br/consulte/legislacao/completa/completa-nova-min.html?tipo=CON&num=1989&comp=&ano=1989&texto=consolidado#texto""" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#UnidadeOrcamentaria
+:UnidadeOrcamentaria rdf:type owl:Class ;
+                     rdfs:subClassOf :DotacaoOrcamentaria ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :descricao ;
+                                       owl:someValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :numero ;
+                                       owl:someValuesFrom xsd:string
+                                     ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/5/EMPMG#Minas_tem_História
+:Minas_tem_História rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AplicacaoDiretaDoacaoBens
+                :CelebracaoConvenio
+                :ExecucaoDireta
+                :ExecucaoDiretaCaixaEscolar
+                :OutrosInstrumentos
+                :Resolucao
+                :TransferenciaEspecial
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AquisicaoDeBem
+                :Especificacao
+                :ReformaOuObra
+                :Servico
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ConsorcioPublico
+                :FundoMunicipalDeSaude
+                :OrganizacaoDaSociedadeCivil
+                :OrgaoOuEntidadePublica
+                :PoderExecutivoMunicipal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :OrigemDoSistemaDeInfomacaoSISOR
+                :Remanejamento
+                :SaneamentoERemanejamentoConstitucional
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
