@@ -1,0 +1,10 @@
+Column,Code,Class
+TipoIndicacao,APLICACAO DIRETA DOACAO DE BENS,:AplicacaoDiretaDoacaoBens
+TipoIndicacao,CELEBRACAO DE CONVENIO,:CelebracaoConvenio
+TipoIndicacao,EXECUCAO DIRETA,:ExecucaoDireta
+TipoIndicacao,EXECUCAO DIRETA - CAIXA ESCOLAR,:ExecucaoDiretaCaixaEscolar
+TipoIndicacao,OUTROS INSTRUMENTOS,:OutrosInstrumentos
+TipoIndicacao,RESOLUCAO,:Resolucao
+TipoIndicacao,TRANSFERENCIA ESPECIAL,:TransferenciaEspecial
+NomeGrupoDespesa,INVESTIMENTOS,:Investimento
+NomeGrupoDespesa,OUTRAS DESPESAS CORRENTES,:DespesaCorrente

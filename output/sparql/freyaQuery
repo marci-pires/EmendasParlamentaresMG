@@ -1,0 +1,82 @@
+prefix np: <http://www.nanopub.org/nschema#> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix prov: <http://www.w3.org/ns/prov#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix uo: <http://purl.obolibrary.org/obo/UO_> 
+prefix sio: <http://semanticscience.org/resource/> 
+prefix stato: <http://purl.obolibrary.org/obo/STATO_> 
+prefix example-kb: <http://example.com/kb/example#> 
+prefix hasco: <http://hadatac.org/ont/hasco#> 
+prefix skos: <http://www.w3.org/2008/05/skos#> 
+prefix osm: <http://www.w3.org/2008/05/osm#> 
+prefix freya: <http://www.freya.org#> 
+
+SELECT DISTINCT ?numeroindicacao ?responsavelnome ?tipoindicacao ?nomegrupodespesa ?descricaomunicipio ?nomeconvenentebeneficiado ?valorindicado WHERE {
+  ?numeroindicacao_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> hasco:originalId  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?indicacao_V  ;
+    <http://semanticscience.org/resource/hasValue> ?numeroindicacao .
+
+  ?responsavelnome_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?responsavel_V  ;
+    <http://semanticscience.org/resource/hasValue> ?responsavelnome .
+
+  ?tipoindicacao_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?execucaodaindicacao_V  ;
+    <http://semanticscience.org/resource/hasValue> ?tipoindicacao .
+
+  ?nomegrupodespesa_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?tipodedespesa_V  ;
+    <http://semanticscience.org/resource/hasValue> ?nomegrupodespesa .
+
+  ?descricaomunicipio_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Municipio  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?municipiobeneficiario_V  ;
+    <http://semanticscience.org/resource/hasValue> ?descricaomunicipio .
+
+  ?nomeconvenentebeneficiado_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Beneficiario  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?nomedobeneficiario_V  ;
+    <http://semanticscience.org/resource/hasValue> ?nomeconvenentebeneficiado .
+
+  ?valorindicado_E <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    <http://semanticscience.org/resource/isAttributeOf>    ?valorindicacao_V  ;
+    <http://semanticscience.org/resource/hasValue> ?valorindicado .
+
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao .
+
+  ?responsavel_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:NomeResponsavel .
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    freya:indicacaoPossui freya:NomeResponsavel .
+
+  ?execucaodaindicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:TipoIndicacao .
+
+  ?tipodedespesa_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:TipoDespesa .
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    freya:indicacaoPossuiTipo freya:TipoIndicacao .
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    freya:indicacaoPossuiTipoDespesa freya:TipoDespesa .
+
+  ?municipiobeneficiario_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Municipio .
+
+  ?nomedobeneficiario_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Beneficiario  ;
+    freya:beneficiarioSituadoEm freya:Municipio .
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    freya:indicacaoBeneficia freya:Beneficiario .
+
+  ?valorindicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:ValorIndicacao .
+
+  ?indicacao_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Indicacao  ;
+    freya:possuiValorIndicacao freya:ValorIndicacao .
+
+  ?nomedobeneficiario_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Beneficiario  ;
+    freya:benefiadorPor freya:TipoIndicacao .
+
+  ?nomedobeneficiario_V <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> freya:Beneficiario  ;
+    freya:benefiadorPor freya:TipoDespesa .
+
+}

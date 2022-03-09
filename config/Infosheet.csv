@@ -1,0 +1,29 @@
+Attribute,Value
+Type,http://purl.org/dc/dcmitype/Dataset
+Title,EmendasParlamentares
+Alternative Title,EmendasParlamentares
+Comment,Criando um grafo de conhecimento usando a tecnica SDD
+Description,Os dados foram anotados do dataset EmendasParlamentares para demonstrar a tecnica SDD
+Date Created,18/11/2021
+Creators,Marcela Pires
+Contributors,Leonardo Heredia
+Publisher,Marcela Pires
+Date of Issue,12/10/2021
+Link,
+Identifier,freya
+Keywords,
+License,
+Rights,
+Language,
+Version,1.0
+Version Of,
+Previous Version,
+Standards,
+Source,EmendasParlamentares/config/Infosheet.csv
+File Format,csv
+Documentation,
+Dictionary Mapping,EmendasParlamentares/input/DM/sdd_emendasparlament.csv
+Codebook,EmendasParlamentares/input/CB/Codebook.csv
+Code Mapping,EmendasParlamentares/config/code_mappings.csv
+Timeline,
+Imports,
