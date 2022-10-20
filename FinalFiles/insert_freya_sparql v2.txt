@@ -1,0 +1,554 @@
+INSERT IN GRAPH <http://emenda> {
+  
+<#emenda:52688> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:52688> <#rdf:type> <#hasco:originalId> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:52688> <#rdf:type> <#xsd:integer> . 
+<#emenda:52688> <#sio:hasValue> 52688 . 
+<#emenda:52688> <#freya:indicacao> 52688 . 
+<#emenda:52688> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:52688> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:52688> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:52688> <#rdf:type> <#xsd:string> .
+<#emenda:52688> <#sio:hasValue> 'AGOSTINHO PATRUS FILHO' . 
+<#emenda:52688> <#freya:responsavel> 'AGOSTINHO PATRUS FILHO' .
+<#emenda:52688> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:52688> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:52688> <#rdf:type> <#freya:Resolucao> .
+<#emenda:52688> <#rdf:type> <#xsd:string> .
+<#emenda:52688> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:52688> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:52688> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:52688> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:52688> <#rdf:type> <#freya:Investimento> .
+<#emenda:52688> <#rdf:type> <#xsd:string> .
+<#emenda:52688> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:52688> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:52688> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:52688> <#rdf:type> <#freya:Municipio> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:52688> <#rdf:type> <#xsd:string> .
+<#emenda:52688> <#sio:hasValue>'SANTA MARIA DO SUACUI' .
+<#emenda:52688> <#freya:municipiobeneficiario>'SANTA MARIA DO SUACUI'.
+<#emenda:52688> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:52688> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:52688> <#rdf:type> <#xsd:string> .
+<#emenda:52688> <#sio:hasValue> 'HOSPITAL SANTA MARIA ETERNA' .
+<#emenda:52688> <#freya:nomedobeneficiario>'HOSPITAL SANTA MARIA ETERNA' .
+<#emenda:52688> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:52688> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52688> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:52688> <#rdf:type> <#xsd:integer> .
+<#emenda:52688> <#sio:hasValue> 400000 .
+<#emenda:52688> <#freya:valorindicacao> 400000 .
+  
+  
+<#emenda:52750> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:52750> <#rdf:type> <#hasco:originalId> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:52750> <#rdf:type> <#xsd:integer> . 
+<#emenda:52750> <#sio:hasValue> 52750 . 
+<#emenda:52750> <#freya:indicacao> 52750 . 
+<#emenda:52750> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:52750> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:52750> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:52750> <#rdf:type> <#xsd:string> .
+<#emenda:52750> <#sio:hasValue> 'AGOSTINHO PATRUS FILHO' . 
+<#emenda:52750> <#freya:responsavel> 'AGOSTINHO PATRUS FILHO' .
+<#emenda:52750> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:52750> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:52750> <#rdf:type> <#freya:Resolucao> .
+<#emenda:52750> <#rdf:type> <#xsd:string> .
+<#emenda:52750> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:52750> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:52750> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:52750> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:52750> <#rdf:type> <#freya:Investimento> .
+<#emenda:52750> <#rdf:type> <#xsd:string> .
+<#emenda:52750> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:52750> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:52750> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:52750> <#rdf:type> <#freya:Municipio> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:52750> <#rdf:type> <#xsd:string> .
+<#emenda:52750> <#sio:hasValue>'PEDRA AZUL' .
+<#emenda:52750> <#freya:municipiobeneficiario>'PEDRA AZUL'.
+<#emenda:52750> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:52750> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:52750> <#rdf:type> <#xsd:string> .
+<#emenda:52750> <#sio:hasValue> 'FUNDO MUNICIPAL DE SAUDE DE PEDRA AZUL' .
+<#emenda:52750> <#freya:nomedobeneficiario>'FUNDO MUNICIPAL DE SAUDE DE PEDRA AZUL' .
+<#emenda:52750> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:52750> <#rdf:type> <#freya:Indicacao> .
+<#emenda:52750> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:52750> <#rdf:type> <#xsd:integer> .
+<#emenda:52750> <#sio:hasValue> 100000 .
+<#emenda:52750> <#freya:valorindicacao> 100000 .
+  
+  
+<#emenda:48403> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:48403> <#rdf:type> <#hasco:originalId> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:48403> <#rdf:type> <#xsd:integer> . 
+<#emenda:48403> <#sio:hasValue> 48403 . 
+<#emenda:48403> <#freya:indicacao> 48403 . 
+<#emenda:48403> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:48403> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:48403> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:48403> <#rdf:type> <#xsd:string> .
+<#emenda:48403> <#sio:hasValue> 'AGOSTINHO PATRUS FILHO' . 
+<#emenda:48403> <#freya:responsavel> 'AGOSTINHO PATRUS FILHO' .
+<#emenda:48403> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:48403> <#rdf:type> <#freya:Indicacao> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:48403> <#rdf:type> <#freya:Resolucao> .
+<#emenda:48403> <#rdf:type> <#xsd:string> .
+<#emenda:48403> <#sio:hasValue> 'CELEBRACAO DE CONVENIO' .
+<#emenda:48403> <#freya:execucaodaindicacao> 'CELEBRACAO DE CONVENIO'  .
+<#emenda:48403> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:48403> <#rdf:type> <#freya:Indicacao> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:48403> <#rdf:type> <#freya:Investimento> .
+<#emenda:48403> <#rdf:type> <#xsd:string> .
+<#emenda:48403> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:48403> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:48403> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:48403> <#rdf:type> <#freya:Municipio> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:48403> <#rdf:type> <#xsd:string> .
+<#emenda:48403> <#sio:hasValue>'BAEPENDI' .
+<#emenda:48403> <#freya:municipiobeneficiario>'BAEPENDI'.
+<#emenda:48403> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:48403> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:48403> <#rdf:type> <#xsd:string> .
+<#emenda:48403> <#sio:hasValue> 'MUNICIPIO DE BAEPENDI' .
+<#emenda:48403> <#freya:nomedobeneficiario>'MUNICIPIO DE BAEPENDI' .
+<#emenda:48403> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:48403> <#rdf:type> <#freya:Indicacao> .
+<#emenda:48403> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:48403> <#rdf:type> <#xsd:integer> .
+<#emenda:48403> <#sio:hasValue> 500000 .
+<#emenda:48403> <#freya:valorindicacao> 500000 .
+  
+  
+<#emenda:42801> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:42801> <#rdf:type> <#hasco:originalId> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:42801> <#rdf:type> <#xsd:integer> . 
+<#emenda:42801> <#sio:hasValue> 42801 . 
+<#emenda:42801> <#freya:indicacao> 42801 . 
+<#emenda:42801> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:42801> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:42801> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:42801> <#rdf:type> <#xsd:string> .
+<#emenda:42801> <#sio:hasValue> 'Bloco Democracia e Luta' . 
+<#emenda:42801> <#freya:responsavel> 'Bloco Democracia e Luta' .
+<#emenda:42801> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:42801> <#rdf:type> <#freya:Indicacao> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:42801> <#rdf:type> <#freya:Resolucao> .
+<#emenda:42801> <#rdf:type> <#xsd:string> .
+<#emenda:42801> <#sio:hasValue> 'EXECUCAO DIRETA CAIXA ESCOLAR' .
+<#emenda:42801> <#freya:execucaodaindicacao> 'EXECUCAO DIRETA CAIXA ESCOLAR'  .
+<#emenda:42801> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:42801> <#rdf:type> <#freya:Indicacao> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:42801> <#rdf:type> <#freya:Investimento> .
+<#emenda:42801> <#rdf:type> <#xsd:string> .
+<#emenda:42801> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:42801> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:42801> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:42801> <#rdf:type> <#freya:Municipio> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:42801> <#rdf:type> <#xsd:string> .
+<#emenda:42801> <#sio:hasValue>'IPATINGA' .
+<#emenda:42801> <#freya:municipiobeneficiario>'IPATINGA'.
+<#emenda:42801> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:42801> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:42801> <#rdf:type> <#xsd:string> .
+<#emenda:42801> <#sio:hasValue> 'EE DOUTOR OVIDIO DE ANDRADE' .
+<#emenda:42801> <#freya:nomedobeneficiario>'EE DOUTOR OVIDIO DE ANDRADE' .
+<#emenda:42801> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:42801> <#rdf:type> <#freya:Indicacao> .
+<#emenda:42801> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:42801> <#rdf:type> <#xsd:integer> .
+<#emenda:42801> <#sio:hasValue> 100000 .
+<#emenda:42801> <#freya:valorindicacao> 100000 .
+  
+  
+<#emenda:37888> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:37888> <#rdf:type> <#hasco:originalId> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:37888> <#rdf:type> <#xsd:integer> . 
+<#emenda:37888> <#sio:hasValue> 37888 . 
+<#emenda:37888> <#freya:indicacao> 37888 . 
+<#emenda:37888> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:37888> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:37888> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:37888> <#rdf:type> <#xsd:string> .
+<#emenda:37888> <#sio:hasValue> 'CHARLES SANTOS' . 
+<#emenda:37888> <#freya:responsavel> 'CHARLES SANTOS' .
+<#emenda:37888> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:37888> <#rdf:type> <#freya:Indicacao> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:37888> <#rdf:type> <#freya:Resolucao> .
+<#emenda:37888> <#rdf:type> <#xsd:string> .
+<#emenda:37888> <#sio:hasValue> 'TRANSFERENCIA ESPECIAL' .
+<#emenda:37888> <#freya:execucaodaindicacao> 'TRANSFERENCIA ESPECIAL'  .
+<#emenda:37888> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:37888> <#rdf:type> <#freya:Indicacao> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:37888> <#rdf:type> <#freya:Investimento> .
+<#emenda:37888> <#rdf:type> <#xsd:string> .
+<#emenda:37888> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:37888> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:37888> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:37888> <#rdf:type> <#freya:Municipio> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:37888> <#rdf:type> <#xsd:string> .
+<#emenda:37888> <#sio:hasValue>'FRANCISCO DUMONT' .
+<#emenda:37888> <#freya:municipiobeneficiario>'FRANCISCO DUMONT'.
+<#emenda:37888> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:37888> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:37888> <#rdf:type> <#xsd:string> .
+<#emenda:37888> <#sio:hasValue> 'PREFEITURA MUNICIPAL DE FRANCISCO DUMONT' .
+<#emenda:37888> <#freya:nomedobeneficiario>'PREFEITURA MUNICIPAL DE FRANCISCO DUMONT' .
+<#emenda:37888> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:37888> <#rdf:type> <#freya:Indicacao> .
+<#emenda:37888> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:37888> <#rdf:type> <#xsd:integer> .
+<#emenda:37888> <#sio:hasValue> 2000002 .
+<#emenda:37888> <#freya:valorindicacao> 2000002 .
+  
+  
+<#emenda:44262> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:44262> <#rdf:type> <#hasco:originalId> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:44262> <#rdf:type> <#xsd:integer> . 
+<#emenda:44262> <#sio:hasValue> 44262 . 
+<#emenda:44262> <#freya:indicacao> 44262 . 
+<#emenda:44262> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:44262> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:44262> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:44262> <#rdf:type> <#xsd:string> .
+<#emenda:44262> <#sio:hasValue> 'ANDRE QUINTAO' . 
+<#emenda:44262> <#freya:responsavel> 'ANDRE QUINTAO' .
+<#emenda:44262> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:44262> <#rdf:type> <#freya:Indicacao> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:44262> <#rdf:type> <#freya:Resolucao> .
+<#emenda:44262> <#rdf:type> <#xsd:string> .
+<#emenda:44262> <#sio:hasValue> 'APLICACAO DIRETA DOACAO DE BENS' .
+<#emenda:44262> <#freya:execucaodaindicacao> 'APLICACAO DIRETA DOACAO DE BENS'  .
+<#emenda:44262> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:44262> <#rdf:type> <#freya:Indicacao> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:44262> <#rdf:type> <#freya:Investimento> .
+<#emenda:44262> <#rdf:type> <#xsd:string> .
+<#emenda:44262> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:44262> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:44262> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:44262> <#rdf:type> <#freya:Municipio> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:44262> <#rdf:type> <#xsd:string> .
+<#emenda:44262> <#sio:hasValue>'ENTRE FOLHAS' .
+<#emenda:44262> <#freya:municipiobeneficiario>'ENTRE FOLHAS'.
+<#emenda:44262> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:44262> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:44262> <#rdf:type> <#xsd:string> .
+<#emenda:44262> <#sio:hasValue> 'PREFEITURA MUNICIPAL DE ENTRE FOLHAS' .
+<#emenda:44262> <#freya:nomedobeneficiario>'PREFEITURA MUNICIPAL DE ENTRE FOLHAS' .
+<#emenda:44262> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:44262> <#rdf:type> <#freya:Indicacao> .
+<#emenda:44262> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:44262> <#rdf:type> <#xsd:integer> .
+<#emenda:44262> <#sio:hasValue> 59990 .
+<#emenda:44262> <#freya:valorindicacao> 59990 .
+  
+  
+<#emenda:43855> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:43855> <#rdf:type> <#hasco:originalId> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:43855> <#rdf:type> <#xsd:integer> . 
+<#emenda:43855> <#sio:hasValue> 43855 . 
+<#emenda:43855> <#freya:indicacao> 43855 . 
+<#emenda:43855> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:43855> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:43855> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:43855> <#rdf:type> <#xsd:string> .
+<#emenda:43855> <#sio:hasValue> 'BARTO' . 
+<#emenda:43855> <#freya:responsavel> 'BARTO' .
+<#emenda:43855> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:43855> <#rdf:type> <#freya:Indicacao> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:43855> <#rdf:type> <#freya:Resolucao> .
+<#emenda:43855> <#rdf:type> <#xsd:string> .
+<#emenda:43855> <#sio:hasValue> 'EXECUCAO DIRETA' .
+<#emenda:43855> <#freya:execucaodaindicacao> 'EXECUCAO DIRETA'  .
+<#emenda:43855> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:43855> <#rdf:type> <#freya:Indicacao> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:43855> <#rdf:type> <#freya:Investimento> .
+<#emenda:43855> <#rdf:type> <#xsd:string> .
+<#emenda:43855> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:43855> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:43855> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:43855> <#rdf:type> <#freya:Municipio> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:43855> <#rdf:type> <#xsd:string> .
+<#emenda:43855> <#sio:hasValue>'BELO HORIZONTE' .
+<#emenda:43855> <#freya:municipiobeneficiario>'BELO HORIZONTE'.
+<#emenda:43855> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:43855> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:43855> <#rdf:type> <#xsd:string> .
+<#emenda:43855> <#sio:hasValue> 'FUNDACAO CENTRO DE HEMATOLOGIA E HEMOTERAPIA DE MINAS GERAIS' .
+<#emenda:43855> <#freya:nomedobeneficiario>'FUNDACAO CENTRO DE HEMATOLOGIA E HEMOTERAPIA DE MINAS GERAIS' .
+<#emenda:43855> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:43855> <#rdf:type> <#freya:Indicacao> .
+<#emenda:43855> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:43855> <#rdf:type> <#xsd:integer> .
+<#emenda:43855> <#sio:hasValue> 150000 .
+<#emenda:43855> <#freya:valorindicacao> 150000 .
+  
+  
+<#emenda:45270> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:45270> <#rdf:type> <#hasco:originalId> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:45270> <#rdf:type> <#xsd:integer> . 
+<#emenda:45270> <#sio:hasValue> 45270 . 
+<#emenda:45270> <#freya:indicacao> 45270 . 
+<#emenda:45270> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:45270> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:45270> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:45270> <#rdf:type> <#xsd:string> .
+<#emenda:45270> <#sio:hasValue> 'JOAO VITOR XAVIER' . 
+<#emenda:45270> <#freya:responsavel> 'JOAO VITOR XAVIER' .
+<#emenda:45270> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:45270> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:45270> <#rdf:type> <#freya:Resolucao> .
+<#emenda:45270> <#rdf:type> <#xsd:string> .
+<#emenda:45270> <#sio:hasValue> 'OUTROS INSTRUMENTOS' .
+<#emenda:45270> <#freya:execucaodaindicacao> 'OUTROS INSTRUMENTOS'  .
+<#emenda:45270> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:45270> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:45270> <#rdf:type> <#freya:Investimento> .
+<#emenda:45270> <#rdf:type> <#xsd:string> .
+<#emenda:45270> <#sio:hasValue> 'INVESTIMENTOS'  .
+<#emenda:45270> <#freya:tipodedespesa> 'INVESTIMENTOS' .
+<#emenda:45270> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:45270> <#rdf:type> <#freya:Municipio> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:45270> <#rdf:type> <#xsd:string> .
+<#emenda:45270> <#sio:hasValue>'BELO HORIZONTE' .
+<#emenda:45270> <#freya:municipiobeneficiario>'BELO HORIZONTE'.
+<#emenda:45270> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:45270> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:45270> <#rdf:type> <#xsd:string> .
+<#emenda:45270> <#sio:hasValue> 'FUNDACAO HOSPITALAR DO ESTADO DE MINAS GERAIS' .
+<#emenda:45270> <#freya:nomedobeneficiario>'FUNDACAO HOSPITALAR DO ESTADO DE MINAS GERAIS' .
+<#emenda:45270> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:45270> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45270> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:45270> <#rdf:type> <#xsd:integer> .
+<#emenda:45270> <#sio:hasValue> 200000 .
+<#emenda:45270> <#freya:valorindicacao> 200000 .
+  
+  
+<#emenda:45480> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:45480> <#rdf:type> <#hasco:originalId> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:45480> <#rdf:type> <#xsd:integer> . 
+<#emenda:45480> <#sio:hasValue> 45480 . 
+<#emenda:45480> <#freya:indicacao> 45480 . 
+<#emenda:45480> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:45480> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:45480> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:45480> <#rdf:type> <#xsd:string> .
+<#emenda:45480> <#sio:hasValue> 'LENINHA' . 
+<#emenda:45480> <#freya:responsavel> 'LENINHA' .
+<#emenda:45480> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:45480> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:45480> <#rdf:type> <#freya:Resolucao> .
+<#emenda:45480> <#rdf:type> <#xsd:string> .
+<#emenda:45480> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:45480> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:45480> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:45480> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:45480> <#rdf:type> <#freya:Investimento> .
+<#emenda:45480> <#rdf:type> <#xsd:string> .
+<#emenda:45480> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:45480> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:45480> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:45480> <#rdf:type> <#freya:Municipio> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:45480> <#rdf:type> <#xsd:string> .
+<#emenda:45480> <#sio:hasValue>'SALINAS' .
+<#emenda:45480> <#freya:municipiobeneficiario>'SALINAS'.
+<#emenda:45480> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:45480> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:45480> <#rdf:type> <#xsd:string> .
+<#emenda:45480> <#sio:hasValue> 'FUNDO MUNICIPAL DE SAUDE DE SALINAS' .
+<#emenda:45480> <#freya:nomedobeneficiario>'FUNDO MUNICIPAL DE SAUDE DE SALINAS' .
+<#emenda:45480> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:45480> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45480> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:45480> <#rdf:type> <#xsd:integer> .
+<#emenda:45480> <#sio:hasValue> 60000 .
+<#emenda:45480> <#freya:valorindicacao> 60000 .
+  
+  
+<#emenda:45484> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:45484> <#rdf:type> <#hasco:originalId> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:45484> <#rdf:type> <#xsd:integer> . 
+<#emenda:45484> <#sio:hasValue> 45484 . 
+<#emenda:45484> <#freya:indicacao> 45484 . 
+<#emenda:45484> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:45484> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:45484> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:45484> <#rdf:type> <#xsd:string> .
+<#emenda:45484> <#sio:hasValue> 'LENINHA' . 
+<#emenda:45484> <#freya:responsavel> 'LENINHA' .
+<#emenda:45484> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:45484> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:45484> <#rdf:type> <#freya:Resolucao> .
+<#emenda:45484> <#rdf:type> <#xsd:string> .
+<#emenda:45484> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:45484> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:45484> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:45484> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:45484> <#rdf:type> <#freya:Investimento> .
+<#emenda:45484> <#rdf:type> <#xsd:string> .
+<#emenda:45484> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:45484> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:45484> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:45484> <#rdf:type> <#freya:Municipio> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:45484> <#rdf:type> <#xsd:string> .
+<#emenda:45484> <#sio:hasValue>'SAO JOAO DO PARAISO' .
+<#emenda:45484> <#freya:municipiobeneficiario>'SAO JOAO DO PARAISO'.
+<#emenda:45484> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:45484> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:45484> <#rdf:type> <#xsd:string> .
+<#emenda:45484> <#sio:hasValue> 'FUNDO MUNICIPAL DE SAUDE DE SAO JOAO DO PARAISO' .
+<#emenda:45484> <#freya:nomedobeneficiario>'FUNDO MUNICIPAL DE SAUDE DE SAO JOAO DO PARAISO' .
+<#emenda:45484> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:45484> <#rdf:type> <#freya:Indicacao> .
+<#emenda:45484> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:45484> <#rdf:type> <#xsd:integer> .
+<#emenda:45484> <#sio:hasValue> 62068,12 .
+<#emenda:45484> <#freya:valorindicacao> 62068,12 .
+  
+  
+<#emenda:46605> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:46605> <#rdf:type> <#hasco:originalId> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:46605> <#rdf:type> <#xsd:integer> . 
+<#emenda:46605> <#sio:hasValue> 46605 . 
+<#emenda:46605> <#freya:indicacao> 46605 . 
+<#emenda:46605> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:46605> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:46605> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:46605> <#rdf:type> <#xsd:string> .
+<#emenda:46605> <#sio:hasValue> 'LENINHA' . 
+<#emenda:46605> <#freya:responsavel> 'LENINHA' .
+<#emenda:46605> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:46605> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:46605> <#rdf:type> <#freya:Resolucao> .
+<#emenda:46605> <#rdf:type> <#xsd:string> .
+<#emenda:46605> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:46605> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:46605> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:46605> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:46605> <#rdf:type> <#freya:Investimento> .
+<#emenda:46605> <#rdf:type> <#xsd:string> .
+<#emenda:46605> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:46605> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:46605> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:46605> <#rdf:type> <#freya:Municipio> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:46605> <#rdf:type> <#xsd:string> .
+<#emenda:46605> <#sio:hasValue>'BURITIZEIRO' .
+<#emenda:46605> <#freya:municipiobeneficiario>'BURITIZEIRO'.
+<#emenda:46605> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:46605> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:46605> <#rdf:type> <#xsd:string> .
+<#emenda:46605> <#sio:hasValue> 'FUNDO MUNICIPAL DE SAUDE DE BURITIZEIRO' .
+<#emenda:46605> <#freya:nomedobeneficiario>'FUNDO MUNICIPAL DE SAUDE DE BURITIZEIRO' .
+<#emenda:46605> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:46605> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46605> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:46605> <#rdf:type> <#xsd:integer> .
+<#emenda:46605> <#sio:hasValue> 60000 .
+<#emenda:46605> <#freya:valorindicacao> 60000 .
+  
+  
+<#emenda:46607> <#rdf:type> <#freya:NumeroIndicacao> . 
+<#emenda:46607> <#rdf:type> <#hasco:originalId> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:indicacao> . 
+<#emenda:46607> <#rdf:type> <#xsd:integer> . 
+<#emenda:46607> <#sio:hasValue> 46607 . 
+<#emenda:46607> <#freya:indicacao> 46607 . 
+<#emenda:46607> <#rdf:type> <#freya:ResponsavelNome> . 
+<#emenda:46607> <#rdf:type> <#freya:Indicacao> . 
+<#emenda:46607> <#sio:isAttributeOf> <#freya:responsavel> . 
+<#emenda:46607> <#rdf:type> <#xsd:string> .
+<#emenda:46607> <#sio:hasValue> 'LENINHA' . 
+<#emenda:46607> <#freya:responsavel> 'LENINHA' .
+<#emenda:46607> <#rdf:type> <#freya:TipoIndicacao> .
+<#emenda:46607> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:execucaodaindicacao> .
+<#emenda:46607> <#rdf:type> <#freya:Resolucao> .
+<#emenda:46607> <#rdf:type> <#xsd:string> .
+<#emenda:46607> <#sio:hasValue> 'RESOLUCAO' .
+<#emenda:46607> <#freya:execucaodaindicacao> 'RESOLUCAO'  .
+<#emenda:46607> <#rdf:type> <#freya:NomeGrupoDespesa> .
+<#emenda:46607> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:tipodedespesa> .
+<#emenda:46607> <#rdf:type> <#freya:Investimento> .
+<#emenda:46607> <#rdf:type> <#xsd:string> .
+<#emenda:46607> <#sio:hasValue> 'OUTRAS DESPESAS CORRENTES'  .
+<#emenda:46607> <#freya:tipodedespesa> 'OUTRAS DESPESAS CORRENTES' .
+<#emenda:46607> <#rdf:type> <#freya:DescricaoMunicipio> .
+<#emenda:46607> <#rdf:type> <#freya:Municipio> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:municipiobeneficiario> .
+<#emenda:46607> <#rdf:type> <#xsd:string> .
+<#emenda:46607> <#sio:hasValue>'FRANCISCO DUMONT' .
+<#emenda:46607> <#freya:municipiobeneficiario>'FRANCISCO DUMONT'.
+<#emenda:46607> <#rdf:type> <#freya:NomeConvenenteBeneficiado> .
+<#emenda:46607> <#rdf:type> <#freya:Beneficiario> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:nomedobeneficiario> .
+<#emenda:46607> <#rdf:type> <#xsd:string> .
+<#emenda:46607> <#sio:hasValue> 'FUNDO MUNICIPAL DE SAUDE DE FRANCISCO DUMONT' .
+<#emenda:46607> <#freya:nomedobeneficiario>'FUNDO MUNICIPAL DE SAUDE DE FRANCISCO DUMONT' .
+<#emenda:46607> <#rdf:type> <#freya:ValorIndicado> .
+<#emenda:46607> <#rdf:type> <#freya:Indicacao> .
+<#emenda:46607> <#sio:isAttributeOf> <#freya:valorindicacao> .
+<#emenda:46607> <#rdf:type> <#xsd:integer> .
+<#emenda:46607> <#sio:hasValue> 60000 .
+<#emenda:46607> <#freya:valorindicacao> 60000 .
+  
+}

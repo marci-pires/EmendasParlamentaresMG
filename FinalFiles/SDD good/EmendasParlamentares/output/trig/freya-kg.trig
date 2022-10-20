@@ -1,0 +1,1358 @@
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix stato: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix example-kb: <http://example.com/kb/example#> .
+@prefix hasco: <http://hadatac.org/ont/hasco#> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix osm: <http://www.w3.org/2008/05/osm#> .
+@prefix freya: <http://www.semanticweb.org/freya#> .
+
+<http://www.semanticweb.org/freya#collection-c61872c4b8e54720bd8ed4d2878a6a4b>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://purl.org/dc/dcmitype/Dataset> ;
+        <http://purl.org/dc/terms/title>    "EmendasParlamentares"^^xsd:string ;
+        <http://purl.org/dc/terms/alternative>    "EmendasParlamentares"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>    "Criando um grafo de conhecimento usando a tecnica SDD"^^xsd:string ;
+        <http://purl.org/dc/terms/description>    "Os dados foram anotados do dataset EmendasParlamentares para demonstrar a tecnica SDD"^^xsd:string ;
+        <http://semanticscience.org/resource/hasIdentifier>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://semanticscience.org/resource/Identifier> ; 
+            <http://semanticscience.org/resource/hasValue>    "freya-2.0"^^xsd:string ] ;
+        <http://purl.org/dc/terms/language>    "pt"^^xsd:string ;
+        <http://purl.org/dc/terms/format>    "csv"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#collection-c61872c4b8e54720bd8ed4d2878a6a4b>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime ;
+        <http://purl.org/dc/terms/created>    "2022-03-18"^^xsd:date ;
+        <http://purl.org/dc/terms/creator>    "Marcela Pires"^^xsd:string ;
+        <http://purl.org/dc/terms/publisher>    "Marcela Pires"^^xsd:string ;
+        <http://purl.org/dc/terms/issued>    "2022-03-18"^^xsd:date ;
+        <http://purl.org/pav/version>    "2.0"^^xsd:string ;
+        <http://www.w3.org/2002/07/owl/versionInfo>    "2.0"^^xsd:string ;
+        <http://purl.org/pav/previousVersion>    "1.0"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    hasco:originalId ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#indicacao> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#responsavel> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#grupodespesa> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+    <http://www.semanticweb.org/freya#valorIndicado>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    
+            [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.w3.org/2002/07/owl#Restriction> ;
+                <http://www.w3.org/2002/07/owl#allValuesFrom>    <http://www.semanticweb.org/freya#valorindicacao> ;
+                <http://www.w3.org/2002/07/owl#onProperty>    <http://semanticscience.org/resource/isAttributeOf> ] .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#valorIndicado>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao .
+
+    <http://www.semanticweb.org/freya#responsavel>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:ResponsavelNome .
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:TipoIndicacao .
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:GrupoDespesa .
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Municipio .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Beneficiario ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#valorindicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "valorindicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:ValorIndicacao .
+
+    <http://www.semanticweb.org/freya#indicacao>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Indicacao ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    owl:Class ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>    freya:Beneficiario ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#valorindicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-96a986849900433b1006dcc95b09bc06>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-e581a563cc183eea2ef5b3896823502e> ;
+        <http://semanticscience.org/resource/hasValue>    "52688"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-656efe1683ffd43f6102f9d4cd33b232> ;
+        <http://semanticscience.org/resource/hasValue>    "AGOSTINHO PATRUS FILHO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-85da08736956ece4cce6037de401c54d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-9597584ab68638db5a40ae9f3a3cb81d> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Resolucao"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "RESOLUCAO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-bb3ce7e7b685e417af59b106bfb4ee2f>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-e1ca1f5bd300d54cd23716a5ab285275> ;
+        <http://semanticscience.org/resource/hasValue>    "SANTA MARIA DO SUACUI"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-616b8e9fafb919d61bd17becbaf2ad8d> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-17998726e40f928298fbca5f0216282d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-44a93bbcc231c3212527f56baf379c2a> ;
+        <http://semanticscience.org/resource/hasValue>    "HOSPITAL SANTA MARIA ETERNA"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-d4a4852a44ea6cff306b35520c918698>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-fa33fad6349238d72ccfa20a89e8686e>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-18d5ff53542fca378732b7f54594ab67>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-54316b4a3b1177780dfa699e7a63d499>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-911f446a13fbc2c55a2b41cb4f202854>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-e581a563cc183eea2ef5b3896823502e>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-656efe1683ffd43f6102f9d4cd33b232>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-9597584ab68638db5a40ae9f3a3cb81d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-e1ca1f5bd300d54cd23716a5ab285275>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-616b8e9fafb919d61bd17becbaf2ad8d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-7c18e51a45bd7abe1844ce1eec99069c>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-44a93bbcc231c3212527f56baf379c2a>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-96a986849900433b1006dcc95b09bc06>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-85da08736956ece4cce6037de401c54d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-bb3ce7e7b685e417af59b106bfb4ee2f>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-17998726e40f928298fbca5f0216282d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-d4a4852a44ea6cff306b35520c918698>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-fa33fad6349238d72ccfa20a89e8686e>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-18d5ff53542fca378732b7f54594ab67>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-54316b4a3b1177780dfa699e7a63d499>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-911f446a13fbc2c55a2b41cb4f202854>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-e581a563cc183eea2ef5b3896823502e>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-656efe1683ffd43f6102f9d4cd33b232>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-9597584ab68638db5a40ae9f3a3cb81d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-e1ca1f5bd300d54cd23716a5ab285275>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-616b8e9fafb919d61bd17becbaf2ad8d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-7c18e51a45bd7abe1844ce1eec99069c>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-44a93bbcc231c3212527f56baf379c2a>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-3aea1965920bd542d9617d5598401982>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-4d709fc7582953ccb8653691517cebfa> ;
+        <http://semanticscience.org/resource/hasValue>    "52750"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-3565e491524c1d0bfe3bdf83c4126484> ;
+        <http://semanticscience.org/resource/hasValue>    "AGOSTINHO PATRUS FILHO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-85da08736956ece4cce6037de401c54d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-6cf3d13c5621ada69626d222678294f1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Resolucao"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "RESOLUCAO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-dfc6c737aa32349d17edb66cb4384f5f>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-bf1b56d628f0f6a9776dc6b0f543b853> ;
+        <http://semanticscience.org/resource/hasValue>    "PEDRA AZUL"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-7c992aa3e593ea65bfe73f798c6506eb>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-029d715561f71d2e976462d2b6a7d78c> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":OutrasDespesaCorrente"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "OUTRAS DESPESAS CORRENTES"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-d9b7e23e75e7ede0b055f84f6a240d92>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-494e57979b6e1954b0c7b86820533065> ;
+        <http://semanticscience.org/resource/hasValue>    "FUNDO MUNICIPAL DE SAUDE DE PEDRA AZUL"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-bc22c9feed0fe027c26f1376aca949f8>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-2fdc34cfbc37b108b9960909e31974c5>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-a983e7de4cca91ac347772f630f65686>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-934428f919082d8152ac0a9ba1a86536>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-07621401408d87538d9b978107b8264e>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-4d709fc7582953ccb8653691517cebfa>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-3565e491524c1d0bfe3bdf83c4126484>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-6cf3d13c5621ada69626d222678294f1>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-bf1b56d628f0f6a9776dc6b0f543b853>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-029d715561f71d2e976462d2b6a7d78c>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b56382b9838f86b0b460ea2370dc94ab>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-494e57979b6e1954b0c7b86820533065>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-3aea1965920bd542d9617d5598401982>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-85da08736956ece4cce6037de401c54d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-dfc6c737aa32349d17edb66cb4384f5f>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-7c992aa3e593ea65bfe73f798c6506eb>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-d9b7e23e75e7ede0b055f84f6a240d92>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-bc22c9feed0fe027c26f1376aca949f8>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-2fdc34cfbc37b108b9960909e31974c5>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-a983e7de4cca91ac347772f630f65686>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-934428f919082d8152ac0a9ba1a86536>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-07621401408d87538d9b978107b8264e>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-4d709fc7582953ccb8653691517cebfa>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-3565e491524c1d0bfe3bdf83c4126484>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-6cf3d13c5621ada69626d222678294f1>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-bf1b56d628f0f6a9776dc6b0f543b853>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-029d715561f71d2e976462d2b6a7d78c>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b56382b9838f86b0b460ea2370dc94ab>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-494e57979b6e1954b0c7b86820533065>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-f39f67090c89d5c5e52db5d5cd5835e8>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-3c39dab31367640c5fa2b53c871687fc> ;
+        <http://semanticscience.org/resource/hasValue>    "48403"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-21981e5b0563216714f447fbfa12eee1> ;
+        <http://semanticscience.org/resource/hasValue>    "AGOSTINHO PATRUS FILHO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-7c102b7ab1f5285ec8c386c72d39702a>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-082d0269ae45f9385320f13efab8dbeb> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Convenio"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "CELEBRACAO DE CONVENIO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-96564ef297a8c7eec9c790ca3bee57da>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-0bb3ffea3e0ffd4e67c20e85b586d925> ;
+        <http://semanticscience.org/resource/hasValue>    "BAEPENDI"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-7f895abc805df56c9fc94918d4fa47f1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-42fdd5da7b17860f4b4d61c25e21b27a>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-7e8002d413b454c85b1dea549af3597f> ;
+        <http://semanticscience.org/resource/hasValue>    "MUNICIPIO DE BAEPENDI"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-5944910425b4e7ac6ba31981ec7e9f66>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-6a7a5391ee5c574e6bfef74691f40011>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-9b122b8f92ef9f1e95ab8bd46b75ed10>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-15d6855b6d8d9c8c84fca7f6b3da48b2>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-a62fa9b469969d743cb5ded754fcc88b>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-3c39dab31367640c5fa2b53c871687fc>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-21981e5b0563216714f447fbfa12eee1>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-082d0269ae45f9385320f13efab8dbeb>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-0bb3ffea3e0ffd4e67c20e85b586d925>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-7f895abc805df56c9fc94918d4fa47f1>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-f92fb37d1bc01c5b6e16a8e3a84e0275>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-7e8002d413b454c85b1dea549af3597f>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-f39f67090c89d5c5e52db5d5cd5835e8>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-7c102b7ab1f5285ec8c386c72d39702a>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-96564ef297a8c7eec9c790ca3bee57da>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:35Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-42fdd5da7b17860f4b4d61c25e21b27a>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-5944910425b4e7ac6ba31981ec7e9f66>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-6a7a5391ee5c574e6bfef74691f40011>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-9b122b8f92ef9f1e95ab8bd46b75ed10>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-15d6855b6d8d9c8c84fca7f6b3da48b2>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-a62fa9b469969d743cb5ded754fcc88b>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-3c39dab31367640c5fa2b53c871687fc>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-21981e5b0563216714f447fbfa12eee1>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-082d0269ae45f9385320f13efab8dbeb>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-0bb3ffea3e0ffd4e67c20e85b586d925>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-7f895abc805df56c9fc94918d4fa47f1>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-f92fb37d1bc01c5b6e16a8e3a84e0275>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-7e8002d413b454c85b1dea549af3597f>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-1bfe34c7530fd74497346a5c2c393341>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-8b9ff15a02fc5f2f54718ee401a6fca7> ;
+        <http://semanticscience.org/resource/hasValue>    "42801"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-8d1e6a8d156ef86f032f6213b9f477c4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-438e72ed94ae010a7201c6b7eba2361a> ;
+        <http://semanticscience.org/resource/hasValue>    "Bloco Democracia e Luta"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-2d72664ae154bb9b381c3175cd160c1b>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-489c8b031bea3453f38c46d5eaba1263> ;
+        <http://semanticscience.org/resource/hasValue>    "EXECUCAO DIRETA CAIXA ESCOLAR"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-5af20e94529fddd018a9ba4fa66a5c84>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-b70b2bc861aaeba8e18dc32f0c99e619> ;
+        <http://semanticscience.org/resource/hasValue>    "IPATINGA"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-ae4ccdfcfa52b98412142f5d100ad6b3> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-f94178e3e5e2cc539e51cd2f55e9e1aa>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-24d006d5cd8a4866308469ce41c8c6d2> ;
+        <http://semanticscience.org/resource/hasValue>    "EE DOUTOR OVÍDIO DE ANDRADE"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-5b2287dbce570c9bdacea7eea2e66227>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-79512bf6d649ff9038ceeed049e5fcc3>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-3efaf23e9e6fcd3366c745416225ac51>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-af723d2ea986549e931f91168baf0e36>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-76ded920a91ec5075f8a0f6e7dccadd9>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-8b9ff15a02fc5f2f54718ee401a6fca7>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-438e72ed94ae010a7201c6b7eba2361a>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-489c8b031bea3453f38c46d5eaba1263>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-b70b2bc861aaeba8e18dc32f0c99e619>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-ae4ccdfcfa52b98412142f5d100ad6b3>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-90141d9b4037c5a8c489b90a198ec9d0>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-24d006d5cd8a4866308469ce41c8c6d2>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-1bfe34c7530fd74497346a5c2c393341>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-8d1e6a8d156ef86f032f6213b9f477c4>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-2d72664ae154bb9b381c3175cd160c1b>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-5af20e94529fddd018a9ba4fa66a5c84>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-f94178e3e5e2cc539e51cd2f55e9e1aa>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-5b2287dbce570c9bdacea7eea2e66227>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-79512bf6d649ff9038ceeed049e5fcc3>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-3efaf23e9e6fcd3366c745416225ac51>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-af723d2ea986549e931f91168baf0e36>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-76ded920a91ec5075f8a0f6e7dccadd9>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-8b9ff15a02fc5f2f54718ee401a6fca7>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-438e72ed94ae010a7201c6b7eba2361a>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-489c8b031bea3453f38c46d5eaba1263>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-b70b2bc861aaeba8e18dc32f0c99e619>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-ae4ccdfcfa52b98412142f5d100ad6b3>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-90141d9b4037c5a8c489b90a198ec9d0>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-24d006d5cd8a4866308469ce41c8c6d2>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-71a88ca19e4471158d062067093153ed>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-eb238a4419eb9d57ee9dc693d0d4e2ce> ;
+        <http://semanticscience.org/resource/hasValue>    "37888"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-5729868e89581f459b0007ad4b534216>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-4387e1e522790b7f01be9cf5d6c2137d> ;
+        <http://semanticscience.org/resource/hasValue>    "CHARLES SANTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-2f93db5598417d571f32aa31c1fdd4f7>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-09a58e51085bfa87e78491ad1f0d223e> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":TransferenciaEspecial"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "TRANSFERENCIA ESPECIAL"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-5044bb94a6cc0b4c35f20b15bf8dbdb9>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-c3bef8db13782f646dc64bf0ca3e194e> ;
+        <http://semanticscience.org/resource/hasValue>    "FRANCISCO DUMONT"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-cf3130f65a4e2796222b6471761e4235> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-c97b76e467712fcf873755bc1e271626>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-1733b84a65420689df4e21eba621f30a> ;
+        <http://semanticscience.org/resource/hasValue>    "PREFEITURA MUNICIPAL DE FRANCISCO DUMONT"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-f2475d40a5403410b817388b2b40698d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-913e16163d4f4776b5d89629952b6735>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-4e3bca5b7724720060e7a234f36329b1>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-55ac6a54d8798350605940aaa4bd4762>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-14a3221dbac71fd3c445c5888011d2c6>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-eb238a4419eb9d57ee9dc693d0d4e2ce>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-4387e1e522790b7f01be9cf5d6c2137d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-09a58e51085bfa87e78491ad1f0d223e>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-c3bef8db13782f646dc64bf0ca3e194e>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-cf3130f65a4e2796222b6471761e4235>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-be84c9311df07a6e9588771b44efd4bc>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-1733b84a65420689df4e21eba621f30a>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-71a88ca19e4471158d062067093153ed>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-5729868e89581f459b0007ad4b534216>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-2f93db5598417d571f32aa31c1fdd4f7>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-5044bb94a6cc0b4c35f20b15bf8dbdb9>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-c97b76e467712fcf873755bc1e271626>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-f2475d40a5403410b817388b2b40698d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-913e16163d4f4776b5d89629952b6735>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-4e3bca5b7724720060e7a234f36329b1>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-55ac6a54d8798350605940aaa4bd4762>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-14a3221dbac71fd3c445c5888011d2c6>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-eb238a4419eb9d57ee9dc693d0d4e2ce>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-4387e1e522790b7f01be9cf5d6c2137d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-09a58e51085bfa87e78491ad1f0d223e>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-c3bef8db13782f646dc64bf0ca3e194e>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-cf3130f65a4e2796222b6471761e4235>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-be84c9311df07a6e9588771b44efd4bc>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-1733b84a65420689df4e21eba621f30a>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-f3e63d9da38c5e12a401f9c857a9e752>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-1bf5345b32cc0c89a74cd94a97acfb29> ;
+        <http://semanticscience.org/resource/hasValue>    "44262"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-686d12a47970c5d810449eedc0981c7f>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-8c12faa80d0c92a8b2d3b3767f47ef33> ;
+        <http://semanticscience.org/resource/hasValue>    "ANDRE QUINTAO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-a09366707ccf8dcaabf423c377deaaba>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-f41d995f8fc890c2a3fe3dcb9dd4f414> ;
+        <http://semanticscience.org/resource/hasValue>    "APLICACAO DIRETA DOAÇÃO DE BENS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-98717be5938b70750b774ff9f80c0350>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-9cd1b263cf3f956ca20975e40d85ba77> ;
+        <http://semanticscience.org/resource/hasValue>    "ENTRE FOLHAS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-34c24c9b4cd73a852a57075c7a1e5414> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-7474de8e8684feab27573ff8ef318441>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-382e498d11b6f0469c20664658336a09> ;
+        <http://semanticscience.org/resource/hasValue>    "PREFEITURA MUNICIPAL DE ENTRE FOLHAS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-ef2295770ae169664a9650029da27d4a>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-48e3354a5354067006b76f3be743ffdb>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-22848e0af31104f10465d698e81d0186>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-09d90995a02785b7415cb439d5682e0f>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-01614d50e102bd97f5c3e96c5b4de8ba>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-1bf5345b32cc0c89a74cd94a97acfb29>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-8c12faa80d0c92a8b2d3b3767f47ef33>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-f41d995f8fc890c2a3fe3dcb9dd4f414>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-9cd1b263cf3f956ca20975e40d85ba77>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-34c24c9b4cd73a852a57075c7a1e5414>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b033b05d1a7f675ef08e163e8e53de1d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-382e498d11b6f0469c20664658336a09>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-f3e63d9da38c5e12a401f9c857a9e752>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-686d12a47970c5d810449eedc0981c7f>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-a09366707ccf8dcaabf423c377deaaba>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-98717be5938b70750b774ff9f80c0350>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-7474de8e8684feab27573ff8ef318441>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-ef2295770ae169664a9650029da27d4a>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-48e3354a5354067006b76f3be743ffdb>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-22848e0af31104f10465d698e81d0186>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-09d90995a02785b7415cb439d5682e0f>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-01614d50e102bd97f5c3e96c5b4de8ba>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-1bf5345b32cc0c89a74cd94a97acfb29>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-8c12faa80d0c92a8b2d3b3767f47ef33>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-f41d995f8fc890c2a3fe3dcb9dd4f414>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-9cd1b263cf3f956ca20975e40d85ba77>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-34c24c9b4cd73a852a57075c7a1e5414>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b033b05d1a7f675ef08e163e8e53de1d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-382e498d11b6f0469c20664658336a09>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-77367b76b920a09ddc066d20eaf0d0f1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-43e40aa8730fc6c210e44a66965c572c> ;
+        <http://semanticscience.org/resource/hasValue>    "43855"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-7c4fa68da82042154a511ecb083a13c1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-e6397382c09980d4e8ac7668ec63c152> ;
+        <http://semanticscience.org/resource/hasValue>    "BARTO"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-69f7e4879ce97f14c8cdd672cbcb712d>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-2c1429be5b8587bfd3bcca1d8cc657c5> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":ExecucaoDireta"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "EXECUCAO DIRETA"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-d2220fb1eac3d073b67aa95856c0a03e>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-2dc7604ccc0bc6d4a7f8945720f10dc0> ;
+        <http://semanticscience.org/resource/hasValue>    "BELO HORIZONTE"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-7c992aa3e593ea65bfe73f798c6506eb>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-e67f44a9f0f6139d469512847ad81ac8> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":OutrasDespesaCorrente"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "OUTRAS DESPESAS CORRENTES"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-341bf05b1bfc9d4c078e0df3c1b87df1>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-2d8f9df3662eb79f1a2ebf9bc8ff9851> ;
+        <http://semanticscience.org/resource/hasValue>    "FUNDACAO CENTRO DE HEMATOLOGIA E HEMOTERAPIA DE MINAS GERAIS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-d0d4d8772fa002ffb2d567b45db62095>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-f3c79a2a99bc11ea82473c11a9c4be61>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-18360a947da90a19f26eb459cc006e94>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-d7643a9ae0343e9d6e50042aa7d4a7a2>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-5ee24abd5309a0ac7a81770f525c8eff>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-43e40aa8730fc6c210e44a66965c572c>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-e6397382c09980d4e8ac7668ec63c152>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-2c1429be5b8587bfd3bcca1d8cc657c5>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-2dc7604ccc0bc6d4a7f8945720f10dc0>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-e67f44a9f0f6139d469512847ad81ac8>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-c3be6721a56dac211171d914a81572e1>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-2d8f9df3662eb79f1a2ebf9bc8ff9851>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-77367b76b920a09ddc066d20eaf0d0f1>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-7c4fa68da82042154a511ecb083a13c1>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-69f7e4879ce97f14c8cdd672cbcb712d>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-d2220fb1eac3d073b67aa95856c0a03e>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-7c992aa3e593ea65bfe73f798c6506eb>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-341bf05b1bfc9d4c078e0df3c1b87df1>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-d0d4d8772fa002ffb2d567b45db62095>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-f3c79a2a99bc11ea82473c11a9c4be61>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-18360a947da90a19f26eb459cc006e94>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-d7643a9ae0343e9d6e50042aa7d4a7a2>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-5ee24abd5309a0ac7a81770f525c8eff>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-43e40aa8730fc6c210e44a66965c572c>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-e6397382c09980d4e8ac7668ec63c152>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-2c1429be5b8587bfd3bcca1d8cc657c5>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-2dc7604ccc0bc6d4a7f8945720f10dc0>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-e67f44a9f0f6139d469512847ad81ac8>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-c3be6721a56dac211171d914a81572e1>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-2d8f9df3662eb79f1a2ebf9bc8ff9851>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-89f6336849dbad41a6560bcdb70d1c93>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NumeroIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    hasco:originalId ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#indicacao-a36c1a883078a15ffab34f1008c3d55b> ;
+        <http://semanticscience.org/resource/hasValue>    "45270"^^xsd:integer .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-0636222af3013d71ce48e056f9af5e7c>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#ResponsavelNome> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#responsavel-32a1f8d2e8e97dee98053a4953bfad47> ;
+        <http://semanticscience.org/resource/hasValue>    "JOAO VITOR XAVIER"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-7a1bb4240991a48d75acd2a3275ed80b>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#TipoIndicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#execucaodaindicacao-2468600ed9939705fbc9b2d4bfdf90ed> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":OutrosInstrumentos"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "OUTROS INSTRUMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-d2220fb1eac3d073b67aa95856c0a03e>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#DescricaoMunicipio> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#municipiobeneficiario-8c6aea03a31ba40b8962450fa9026f78> ;
+        <http://semanticscience.org/resource/hasValue>    "BELO HORIZONTE"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeGrupoDespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#grupodespesa-678f2aec29ffa6824c51ba078213b706> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    ":Investimento"^^xsd:string ;
+        <http://semanticscience.org/resource/hasValue>    "INVESTIMENTOS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-8acf53edad67f856e02f18e6b79849bc>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://semanticscience.org/resource/isAttributeOf>    <http://www.semanticweb.org/freya#nomedobeneficiario-c427f9585452e73cf76e01fa92957c9b> ;
+        <http://semanticscience.org/resource/hasValue>    "FUNDACAO HOSPITALAR DO ESTADO DE MINAS GERAIS"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-fd231f172a635c82a83c8738c785d681>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-b7f2510bd0afa53de8c3e8a80cb5c62d>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string ;
+        freya:indicacaoPossui "freya:ResponsavelNome"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-b804282f7393bc72d5f6cddf460d1829>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+        freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-c8539b66acd5d967f944b3cff89f968a>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string ;
+        freya:indicacoPossuiGrupoDespesa "freya:GrupoDespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-db178bb1639cc0d67b447fc95f4ecd9b>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+        freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#indicacao-a36c1a883078a15ffab34f1008c3d55b>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#indicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Indicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "indicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+        freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#responsavel-32a1f8d2e8e97dee98053a4953bfad47>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#responsavel> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:ResponsavelNome ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "responsavel"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-2468600ed9939705fbc9b2d4bfdf90ed>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#execucaodaindicacao> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:TipoIndicacao ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "execucaodaindicacao"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-8c6aea03a31ba40b8962450fa9026f78>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#municipiobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Municipio ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "municipiobeneficiario"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#grupodespesa-678f2aec29ffa6824c51ba078213b706>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#grupodespesa> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:GrupoDespesa ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "grupodespesa"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b5ec3bdaf4fa98ac7ce256742d0850ea>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+        freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-c427f9585452e73cf76e01fa92957c9b>    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    <http://www.semanticweb.org/freya#nomedobeneficiario> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>    freya:Beneficiario ;
+        <http://www.w3.org/2000/01/rdf-schema#label>    "nomedobeneficiario"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+        freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string .
+
+
+    <http://www.semanticweb.org/freya#NumeroIndicacao-89f6336849dbad41a6560bcdb70d1c93>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#ResponsavelNome-0636222af3013d71ce48e056f9af5e7c>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#TipoIndicacao-7a1bb4240991a48d75acd2a3275ed80b>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#DescricaoMunicipio-d2220fb1eac3d073b67aa95856c0a03e>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeGrupoDespesa-1298c08ec33614276a6a8c77c7dbc171>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#NomeConvenenteBeneficiado-8acf53edad67f856e02f18e6b79849bc>
+        <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-fd231f172a635c82a83c8738c785d681>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-b7f2510bd0afa53de8c3e8a80cb5c62d>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-b804282f7393bc72d5f6cddf460d1829>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-c8539b66acd5d967f944b3cff89f968a>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-db178bb1639cc0d67b447fc95f4ecd9b>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#indicacao-a36c1a883078a15ffab34f1008c3d55b>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#responsavel-32a1f8d2e8e97dee98053a4953bfad47>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#execucaodaindicacao-2468600ed9939705fbc9b2d4bfdf90ed>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#municipiobeneficiario-8c6aea03a31ba40b8962450fa9026f78>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#grupodespesa-678f2aec29ffa6824c51ba078213b706>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-b5ec3bdaf4fa98ac7ce256742d0850ea>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+
+    <http://www.semanticweb.org/freya#nomedobeneficiario-c427f9585452e73cf76e01fa92957c9b>    <http://www.w3.org/ns/prov#generatedAtTime>    "2022-07-07T14:17:36Z"^^xsd:dateTime .
+

@@ -1,0 +1,1191 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix freya: <http://www.freya.org#> .
+@prefix hasco: <http://hadatac.org/ont/hasco#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+freya:DescricaoMunicipio-046d3b6516e277128184e87874faaf19 a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "PECANHA"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-78ab83c91f59c1c1686b819e7848a51d ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-8f5fd43e90f455b057cf25277cc1fa42 a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "DESTERRO DO MELO"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-27774740f7d9fc260e159710641e207d ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-96564ef297a8c7eec9c790ca3bee57da a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "BAEPENDI"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-0bb3ffea3e0ffd4e67c20e85b586d925 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-bb3ce7e7b685e417af59b106bfb4ee2f a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "SANTA MARIA DO SUACUI"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-e1ca1f5bd300d54cd23716a5ab285275 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-c58d72e8c40085d8532addcfa5ad19eb a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "RIO CASCA"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-f8c6c4a8972806674e313fb651f206da ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-ca87b2592ede7d3376362475b1009919 a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "CAMPESTRE"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-6854bb37f5f03ff257ccdb9f90019c1c,
+        freya:municipiobeneficiario-7097724d9481bcc8f5e82e99c032a805 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-d13e0bec4ce6e18247d9d579c7b35631 a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "CRISOLITA"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-f47e371001732e375568d463a181d863 ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-d780fd9392e73ef6b9a906e1416a89f2 a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "UBAI"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-f398d88b502aee18730ae166c8db8fda ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio-dfc6c737aa32349d17edb66cb4384f5f a freya:DescricaoMunicipio,
+        freya:Municipio ;
+    sio:hasValue "PEDRA AZUL"^^xsd:string ;
+    sio:isAttributeOf freya:municipiobeneficiario-bf1b56d628f0f6a9776dc6b0f543b853 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-17998726e40f928298fbca5f0216282d a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "HOSPITAL SANTA MARIA ETERNA"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-edd5dd534ee3a48ac29e301fc258e083 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-17c1f75dcda3ae9ce80b7a67a8319aea a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "PREFEITURA MUNICIPAL DE RIO CASCA"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-f729712216cfda4b7661b4c69a1bac9c ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-42fdd5da7b17860f4b4d61c25e21b27a a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "MUNICIPIO DE BAEPENDI"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-82b6df3ca1bb463368ef336ef46cdfdc ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-431b713d7412c29b402a49ec0cc7920d a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "PREFEITURA MUNICIPAL DE CAMPESTRE"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-75a276f7272c09b34ce7d825b1b058ea ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-477a546c8973f24e03b65717a2bc7ede a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "FUNDO MUNICIPAL DE SAUDE DE CAMPESTRE"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-289e9e084170d0c2b1fb83767c2a00da ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-6f8a05e552e932ffe51742b7d9f41f06 a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "PREFEITURA MUNICIPAL DE CRISOLITA"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-cd05f1b4343f9bc0c66dde0ecd030c3d ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-7b0d3932cdcff95b5b827f81299dcb48 a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "MUNICIPIO DE DESTERRO DO MELO"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-1a85683d950c373328fc88da817110ba ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-a8cc45a49e07fc76f1db00712edbea29 a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "PREFEITURA MUNICIPAL DE PECANHA"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-6c7e272d9c8584e0a849b665dc26d751 ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-d9b7e23e75e7ede0b055f84f6a240d92 a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "FUNDO MUNICIPAL DE SAUDE DE PEDRA AZUL"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-1b0d0f727e1c0a472e1d1d0e5feb5d0f ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado-e8c40d53f4e600a3d70c86d40a8852aa a freya:Beneficiario,
+        freya:NomeConvenenteBeneficiado ;
+    sio:hasValue "PREFEITURA MUNICIPAL DE UBAI"^^xsd:string ;
+    sio:isAttributeOf freya:nomedobeneficiario-5616e70aa2eb14d7b3e2cb05f2795822 ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NomeGrupoDespesa-5e314e568e30dc3648646b4aba9f78ba a freya:Indicacao,
+        freya:NomeGrupoDespesa,
+        ":DespesaCorrente"^^xsd:string ;
+    sio:hasValue "OUTRAS DESPESAS CORRENTES"^^xsd:string ;
+    sio:isAttributeOf freya:tipodedespesa-7d22de6f15c73d3c08b575eb053d9588,
+        freya:tipodedespesa-c6fa9e5e2594a2beaa9e876903dc1e86 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NomeGrupoDespesa-ab435cd64128f2afd2d0550c342c5f6d a freya:Indicacao,
+        freya:NomeGrupoDespesa,
+        ":Investimento"^^xsd:string ;
+    sio:hasValue "INVESTIMENTOS"^^xsd:string ;
+    sio:isAttributeOf freya:tipodedespesa-0043c3a490ea6ab2dcfc01f7dbd3930d,
+        freya:tipodedespesa-10d6a134f81f5fc90e8c35a0af59705d,
+        freya:tipodedespesa-21aea125f517652b2e710c49497a7c99,
+        freya:tipodedespesa-6a70aae427aaa7417d13d20d953f6caf,
+        freya:tipodedespesa-7eb81f40bfc4e79613d3339597f1c172,
+        freya:tipodedespesa-d1f6a82466272a89289fb42d3168c14b,
+        freya:tipodedespesa-e837c5874fed62e4fc00f7b57be4b5a7,
+        freya:tipodedespesa-f323a0d092d5c5709ffa90f11ac7a066 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:51+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-3aea1965920bd542d9617d5598401982 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 52750 ;
+    sio:isAttributeOf freya:indicacao-4d709fc7582953ccb8653691517cebfa ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-6a0e61878e90ef53b64044351c5c112b a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48490 ;
+    sio:isAttributeOf freya:indicacao-00b6d7f2421e0ab3ef63215586cd73fe ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-85adf2b21d143cd4702a91bac22c3a85 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48462 ;
+    sio:isAttributeOf freya:indicacao-392b600432db30407dcadae019919911 ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-96a986849900433b1006dcc95b09bc06 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 52688 ;
+    sio:isAttributeOf freya:indicacao-e581a563cc183eea2ef5b3896823502e ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-981200bf01a735c629c131849f225653 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48434 ;
+    sio:isAttributeOf freya:indicacao-3fc79b1f0fa8168390a6fe5fb7cfd2bb ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-9f5323520decaef56808f9050873fa2d a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48410 ;
+    sio:isAttributeOf freya:indicacao-5b9dbd3b282c0ca311b57d6d4c59b99f ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-9f639514d0b465c1ef6dde3f0421de31 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48454 ;
+    sio:isAttributeOf freya:indicacao-349fdaf787582673e7b2b93694a33a23 ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-a4acccc35bbb74100cc935064dd42046 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 52703 ;
+    sio:isAttributeOf freya:indicacao-d02307f0dc76113d7805cd7b51de0cb8 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-d69df20200aa53f7d78008993d69380b a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48445 ;
+    sio:isAttributeOf freya:indicacao-ec25013113bbc9846d507cdf14c95de6 ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao-f39f67090c89d5c5e52db5d5cd5835e8 a hasco:originalId,
+        freya:NumeroIndicacao ;
+    sio:hasValue 48403 ;
+    sio:isAttributeOf freya:indicacao-3c39dab31367640c5fa2b53c871687fc ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:ResponsavelNome-944f0bcf5ae15c93b3c583c5f1776e0d a freya:Indicacao,
+        freya:ResponsavelNome ;
+    sio:hasValue "AGOSTINHO PATRUS FILHO"^^xsd:string ;
+    sio:isAttributeOf freya:responsavel-08a79bbe17e6cd572a09a20a7a5c53de,
+        freya:responsavel-20a1c95006ea4329ea89342f6714ca65,
+        freya:responsavel-40f5d0c8d52357d86b3acd5286c7b128,
+        freya:responsavel-62ca3b370f80b61b9164976a02319420,
+        freya:responsavel-63b2f95009e00c90044e1d430831c4d9,
+        freya:responsavel-67b7508c8cebb801ad7e7d1386ee0710,
+        freya:responsavel-781a8b3ef14a47c9f9784c1cba1a3f7e,
+        freya:responsavel-7dec1e05103406d169ef097c4968ef06,
+        freya:responsavel-8aab801494147bc43f03d2f99a677002,
+        freya:responsavel-9ec18ffa4e165439e824c2f9bd20c7b0 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:51+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:TipoIndicacao-7c102b7ab1f5285ec8c386c72d39702a a freya:Indicacao,
+        freya:TipoIndicacao,
+        ":CelebracaoConvenio"^^xsd:string ;
+    sio:hasValue "CELEBRACAO DE CONVENIO"^^xsd:string ;
+    sio:isAttributeOf freya:execucaodaindicacao-03d5d24d44b9626cf8082ecf91508172,
+        freya:execucaodaindicacao-082d0269ae45f9385320f13efab8dbeb,
+        freya:execucaodaindicacao-210a15e291a44c3faece7c68cbd1c4fc,
+        freya:execucaodaindicacao-50547a1299e9229376748b9294c5ddbd,
+        freya:execucaodaindicacao-98d424b4283c5cab606cc992aced3500,
+        freya:execucaodaindicacao-9e7d9126ecbccfb8b2e448bccbcd910e,
+        freya:execucaodaindicacao-ff3037b5f9efb7072056a6fb77c04612 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:51+00:00"^^xsd:dateTime,
+        "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:TipoIndicacao-85da08736956ece4cce6037de401c54d a freya:Indicacao,
+        freya:TipoIndicacao,
+        ":Resolucao"^^xsd:string ;
+    sio:hasValue "RESOLUCAO"^^xsd:string ;
+    sio:isAttributeOf freya:execucaodaindicacao-6cf3d13c5621ada69626d222678294f1,
+        freya:execucaodaindicacao-82f591b3c5a66ae2698c6857f14f5c06,
+        freya:execucaodaindicacao-9597584ab68638db5a40ae9f3a3cb81d ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-0bebb77a8a84415e59bad72c0f53f59c a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 800000 ;
+    sio:isAttributeOf freya:valorindicacao-00ddffc85dcc0d0218d2c48ae8b64dc8,
+        freya:valorindicacao-abddf2efa48b9fa7ad6698022de8d482 ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-128c8ff5931434cdec5a02767adcddea a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 215000 ;
+    sio:isAttributeOf freya:valorindicacao-f524deab0ea077aa737ab26cda4e0ece ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-4b4370c61fced003d11653d7374e7759 a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 150000 ;
+    sio:isAttributeOf freya:valorindicacao-0ae1296a3ff3363671ac50807889fa8f ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-5ac0db7eb73122a90ddd82e9b529a2f2 a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 500000 ;
+    sio:isAttributeOf freya:valorindicacao-d433a1c2bd1892b579cc42826ba4652c ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-a6b597fbe9129ba3ec01ddf9133e215d a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 300000 ;
+    sio:isAttributeOf freya:valorindicacao-8cff294ca29ce3486f2299b2ac5bb66e ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-ae010fa7cc8ee6759665e0a1fc04e04d a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 100000 ;
+    sio:isAttributeOf freya:valorindicacao-1eeae3839fd59e2599e24ff5494630ae,
+        freya:valorindicacao-b7b9662405e21146a6fe91ca86cc4c32 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-cfccb8c69e3e9745e50a0d15c2942615 a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 400000 ;
+    sio:isAttributeOf freya:valorindicacao-9a4c786f71f7070f2658a1e163c3df02 ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado-db63b4751e73f35f7de837b74404b0f7 a freya:Indicacao,
+        freya:ValorIndicado ;
+    sio:hasValue 210000 ;
+    sio:isAttributeOf freya:valorindicacao-f4959b8e1790bcfc4c458b45dd413150 ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:collection-c61872c4b8e54720bd8ed4d2878a6a4b a <http://purl.org/dc/dcmitype/Dataset> ;
+    dcterms:alternative "EmendasParlamentares"^^xsd:string ;
+    dcterms:created "2022-03-18"^^xsd:date ;
+    dcterms:creator "Marcela Pires"^^xsd:string ;
+    dcterms:description "Os dados foram anotados do dataset EmendasParlamentares para demonstrar a tecnica SDD"^^xsd:string ;
+    dcterms:format "csv"^^xsd:string ;
+    dcterms:issued "2022-03-18"^^xsd:date ;
+    dcterms:language "pt"^^xsd:string ;
+    dcterms:publisher "Marcela Pires"^^xsd:string ;
+    dcterms:title "EmendasParlamentares"^^xsd:string ;
+    pav:previousVersion "1.0"^^xsd:string ;
+    pav:version "2.0"^^xsd:string ;
+    sio:hasIdentifier [ a sio:Identifier ;
+            sio:hasValue "freya-2.0"^^xsd:string ] ;
+    rdfs:comment "Criando um grafo de conhecimento usando a tecnica SDD"^^xsd:string ;
+    ns1:versionInfo "2.0"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:indicacao-07621401408d87538d9b978107b8264e a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-0fc94d9843e60ca18eb1bf860d1d226b a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-177ceca1177eba8cc4ff0c027414db4a a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-18d5ff53542fca378732b7f54594ab67 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-1a87470b0a6d03b9a090c21b594324e1 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-1ab8f48a224adb3fff0b74972ccda0e4 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-1d51a82ac690afef3698321838d70f87 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-268c74c0c49b836d5c3686ba8d3c7597 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-29e0272657d28786b85afb180da2ffeb a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-42e82d98c06c68c7bdebded778a2a13b a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-4528aee5d780f74908c944ae2d712197 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-465a6f75b11abbd0fd0c9d1eb82e8d43 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-576c3b0596cb259d18ede6a8ff0a911f a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-5944910425b4e7ac6ba31981ec7e9f66 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-5ad47fa939791bdff211105572b181a7 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-6a66a7c2e78a959a4798f54445c5e394 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-6c950c7094991e6ac71705c7b15b826a a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-73c134171b1584971f81d4368cdf067c a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-74fb58b2049ae7bf4e8bed22179e5c15 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-7ccc48d70e35cee08f2394a1515bd5ef a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-81435bee4c35b174eee944bf03f16e68 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-88c6fc29c71a0e8614c28856d8cdf41a a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-911f446a13fbc2c55a2b41cb4f202854 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-91ce49dd6ecdb5773d8d57f893449df6 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-9a69ad0b51bdb42b828e0a318f914005 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-9b122b8f92ef9f1e95ab8bd46b75ed10 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-9cf6ceb2b66297823165e39444c3afbe a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-a62fa9b469969d743cb5ded754fcc88b a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-a983e7de4cca91ac347772f630f65686 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-b04f0879a5a0482d9c5a4defe85865e6 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-b31c0342b87c9185981210f0372b330e a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-b4d384a40cec39128bd037110516ee64 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-bc22c9feed0fe027c26f1376aca949f8 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-c3565fcb08f80f82a4807be52d2f27db a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-c3d9a8a4b6c8b24b2637a7fc6311fd7a a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-c5b9413dea5d2bd97847c2d2a908ae7d a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-d150e542b4c5aabd7534bd580ab4c5a1 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-d34f19b695f4a5428645235e3f6f2988 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-d394ef4d7023a253ea887723ea060272 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-d4a4852a44ea6cff306b35520c918698 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-d7c6f7308ae00385f6e1588a4ab7d8df a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-db9871b06d8de48cb968467e84d1e01f a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-ddeedd3b9cc505e1f77da991cba9e496 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-dea34bf5ce56553f98afe399f05c1e21 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-e1285809822f047c752649569370fe90 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-eb2c2163768c6b5e0529d84622ea2d0a a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-ec9d5e7fdcf1a4f3e961d678b305d59d a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-eddd91469ef58eccdf991924a70955c1 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-faa5abe658c7a53d93952dd4776ada55 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-fc445434a7cfa2c9e363398767502b06 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-0b15311a2add086f5107387e8c3f8dab a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-17dd638ba7895b2bc91871a7d7fdceed a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-1f0e2f116c15868af1eda8cbfee3aeda a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-2dc41af025f1c52ab100873cf0a6a2a7 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-2fb0348682c68b7182e9054ac84690f9 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-3a65fd885b05a8010e1203221c0cd2bc a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-404f5873b52ae5b28f5491d1d92a0f60 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-44a93bbcc231c3212527f56baf379c2a a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-494e57979b6e1954b0c7b86820533065 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-4fa4b0ee5a00eaf3e66fdc876596220e a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-51fe27ba74b833fae68dd9d4020a2d85 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-5847dd0b442cfe563f9adc1435dcef1f a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-7483408647178c325e9e1b650fdee571 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-7c18e51a45bd7abe1844ce1eec99069c a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-7e8002d413b454c85b1dea549af3597f a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-9794552ad37494caaa823a2486b85865 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-ab79685fc8e657663da9a5d8c5cf53c2 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-b56382b9838f86b0b460ea2370dc94ab a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-efd21434ff20fd761282bc1f1db92097 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-f92fb37d1bc01c5b6e16a8e3a84e0275 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:ResponsavelNome a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:responsavel ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Indicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-03d5d24d44b9626cf8082ecf91508172 a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-082d0269ae45f9385320f13efab8dbeb a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-210a15e291a44c3faece7c68cbd1c4fc a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-50547a1299e9229376748b9294c5ddbd a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-6cf3d13c5621ada69626d222678294f1 a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-82f591b3c5a66ae2698c6857f14f5c06 a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-9597584ab68638db5a40ae9f3a3cb81d a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-98d424b4283c5cab606cc992aced3500 a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-9e7d9126ecbccfb8b2e448bccbcd910e a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao-ff3037b5f9efb7072056a6fb77c04612 a freya:TipoIndicacao,
+        freya:execucaodaindicacao ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-00b6d7f2421e0ab3ef63215586cd73fe a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-349fdaf787582673e7b2b93694a33a23 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-392b600432db30407dcadae019919911 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:indicacao-3c39dab31367640c5fa2b53c871687fc a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-3fc79b1f0fa8168390a6fe5fb7cfd2bb a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-4d709fc7582953ccb8653691517cebfa a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-5b9dbd3b282c0ca311b57d6d4c59b99f a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:indicacao-d02307f0dc76113d7805cd7b51de0cb8 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-e581a563cc183eea2ef5b3896823502e a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:indicacao-ec25013113bbc9846d507cdf14c95de6 a freya:Indicacao,
+        freya:indicacao ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-0bb3ffea3e0ffd4e67c20e85b586d925 a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-27774740f7d9fc260e159710641e207d a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-6854bb37f5f03ff257ccdb9f90019c1c a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-7097724d9481bcc8f5e82e99c032a805 a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-78ab83c91f59c1c1686b819e7848a51d a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-bf1b56d628f0f6a9776dc6b0f543b853 a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-e1ca1f5bd300d54cd23716a5ab285275 a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-f398d88b502aee18730ae166c8db8fda a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-f47e371001732e375568d463a181d863 a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario-f8c6c4a8972806674e313fb651f206da a freya:Municipio,
+        freya:municipiobeneficiario ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-1a85683d950c373328fc88da817110ba a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-1b0d0f727e1c0a472e1d1d0e5feb5d0f a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-289e9e084170d0c2b1fb83767c2a00da a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-5616e70aa2eb14d7b3e2cb05f2795822 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-6c7e272d9c8584e0a849b665dc26d751 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-75a276f7272c09b34ce7d825b1b058ea a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-82b6df3ca1bb463368ef336ef46cdfdc a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-cd05f1b4343f9bc0c66dde0ecd030c3d a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-edd5dd534ee3a48ac29e301fc258e083 a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario-f729712216cfda4b7661b4c69a1bac9c a freya:Beneficiario,
+        freya:nomedobeneficiario ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:responsavel-08a79bbe17e6cd572a09a20a7a5c53de a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:responsavel-20a1c95006ea4329ea89342f6714ca65 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:responsavel-40f5d0c8d52357d86b3acd5286c7b128 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:responsavel-62ca3b370f80b61b9164976a02319420 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:responsavel-63b2f95009e00c90044e1d430831c4d9 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:responsavel-67b7508c8cebb801ad7e7d1386ee0710 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:responsavel-781a8b3ef14a47c9f9784c1cba1a3f7e a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:responsavel-7dec1e05103406d169ef097c4968ef06 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:responsavel-8aab801494147bc43f03d2f99a677002 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:responsavel-9ec18ffa4e165439e824c2f9bd20c7b0 a freya:NomeResponsavel,
+        freya:responsavel ;
+    rdfs:label "responsavel"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-0043c3a490ea6ab2dcfc01f7dbd3930d a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-10d6a134f81f5fc90e8c35a0af59705d a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-21aea125f517652b2e710c49497a7c99 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-6a70aae427aaa7417d13d20d953f6caf a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-7d22de6f15c73d3c08b575eb053d9588 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-7eb81f40bfc4e79613d3339597f1c172 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-c6fa9e5e2594a2beaa9e876903dc1e86 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-d1f6a82466272a89289fb42d3168c14b a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-e837c5874fed62e4fc00f7b57be4b5a7 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa-f323a0d092d5c5709ffa90f11ac7a066 a freya:TipoDespesa,
+        freya:tipodedespesa ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-00ddffc85dcc0d0218d2c48ae8b64dc8 a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-0ae1296a3ff3363671ac50807889fa8f a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-1eeae3839fd59e2599e24ff5494630ae a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-8cff294ca29ce3486f2299b2ac5bb66e a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-9a4c786f71f7070f2658a1e163c3df02 a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-abddf2efa48b9fa7ad6698022de8d482 a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-b7b9662405e21146a6fe91ca86cc4c32 a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:50+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-d433a1c2bd1892b579cc42826ba4652c a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:51+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-f4959b8e1790bcfc4c458b45dd413150 a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:valorindicacao-f524deab0ea077aa737ab26cda4e0ece a freya:ValorIndicacao,
+        freya:valorindicacao ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    prov:generatedAtTime "2022-03-28T17:36:52+00:00"^^xsd:dateTime .
+
+freya:NomeGrupoDespesa a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:tipodedespesa ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Indicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:ValorIndicado a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:valorindicacao ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Indicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:DescricaoMunicipio a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:municipiobeneficiario ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Municipio ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:NomeConvenenteBeneficiado a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:nomedobeneficiario ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Beneficiario ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:NumeroIndicacao a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:indicacao ;
+            owl:onProperty sio:isAttributeOf ],
+        hasco:originalId ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:execucaodaindicacao a owl:Class ;
+    rdfs:label "execucaodaindicacao"^^xsd:string ;
+    rdfs:subClassOf freya:TipoIndicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:municipiobeneficiario a owl:Class ;
+    rdfs:label "municipiobeneficiario"^^xsd:string ;
+    rdfs:subClassOf freya:Municipio ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:responsavel a owl:Class ;
+    rdfs:label "responsavel"^^xsd:string ;
+    rdfs:subClassOf freya:NomeResponsavel ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:tipodedespesa a owl:Class ;
+    rdfs:label "tipodedespesa"^^xsd:string ;
+    rdfs:subClassOf freya:TipoDespesa ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:valorindicacao a owl:Class ;
+    rdfs:label "valorindicacao"^^xsd:string ;
+    rdfs:subClassOf freya:ValorIndicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:TipoIndicacao a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom freya:execucaodaindicacao ;
+            owl:onProperty sio:isAttributeOf ],
+        freya:Indicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:nomedobeneficiario a owl:Class ;
+    rdfs:label "nomedobeneficiario"^^xsd:string ;
+    freya:benefiadorPor "freya:TipoDespesa"^^xsd:string,
+        "freya:TipoIndicacao"^^xsd:string ;
+    freya:beneficiarioSituadoEm "freya:Municipio"^^xsd:string ;
+    rdfs:subClassOf freya:Beneficiario ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
+
+freya:indicacao a owl:Class ;
+    rdfs:label "indicacao"^^xsd:string ;
+    freya:indicacaoBeneficia "freya:Beneficiario"^^xsd:string ;
+    freya:indicacaoPossui "freya:NomeResponsavel"^^xsd:string ;
+    freya:indicacaoPossuiTipo "freya:TipoIndicacao"^^xsd:string ;
+    freya:indicacaoPossuiTipoDespesa "freya:TipoDespesa"^^xsd:string ;
+    freya:possuiValorIndicacao "freya:ValorIndicacao"^^xsd:string ;
+    rdfs:subClassOf freya:Indicacao ;
+    prov:generatedAtTime "2022-03-28T17:36:49+00:00"^^xsd:dateTime .
